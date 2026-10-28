@@ -1,0 +1,1945 @@
+<!doctype html>
+<!--
+==========================================================================================
+  RANGS PROPERTIES LTD. — "Signature" website demo (Option B: film-led, no 3D)
+  Single file. Demo prepared by Brain Station 23. Not a live site.
+==========================================================================================
+
+  DEMO DATA — everything below is missing (TBC), made up to show a feature (DEMO),
+  an assumption (ASSUMED) or a section we are proposing (PROPOSED).
+  Edit content at the top of the main <script>: CONTACT, STATS, PROJECTS, TIMELINE, IMAGES.
+
+  TBC (shown as "TBC" on the page)
+  - Projects delivered, million sq ft built, families (numbers row)
+  - Handover date for every ongoing project, incl. Dokhinayon
+  - Unit size for every project except Dokhinayon (approx. 2,030 sq ft)
+  - Prices: all launches show "Price on request"
+  - Dokhinayon: bedrooms, bathrooms, facing, payment amounts, brochure PDF, floor plan drawings
+  - Rangs Babylonia completion year; years for UN Global Compact membership and the Green Fencing award
+  - WhatsApp number, email, office hours, social media links (buttons show a "TBC" note)
+  - RANCON group text, leadership names/titles/photos, testimonials, video testimonial, stories/press
+  - Map pins are approximate (area level), not exact plot positions
+
+  DEMO (made up to show a feature)
+  - Construction progress %: Dokhinayon 45 (given as demo), Sayera Place 60, Saruala 80, Mayank 35,
+    The Sanctuary 50, The Majestic 25, White Lake 40, Bashira Heights 85, Kuheli 75, RK Square 30,
+    Noorani Heights 55, Ixora 20, Torukabbo 45, Tree House 70, A & F Square 65, Torukunjo 90,
+    Sunset Square 80, T Cube 15, AK Square 35, Rancon One 85
+  - Dokhinayon availability (floor: Unit A / Unit B): 1 Sold/Sold · 2 Sold/Booked · 3 Booked/Available ·
+    4 Available/Sold · 5 Available/Available · 6 Booked/Available · 7 Available/Booked · 8 Available/Available
+  - Dokhinayon milestones (piling done, foundation done, structure in progress, finishing next, handover TBC)
+    and monthly site-photo strip (placeholder frames, May–Oct 2026)
+  - Dokhinayon nearby places and distances: North South University 1.2 km, Independent University
+    Bangladesh 1.0 km, Evercare Hospital Dhaka 1.5 km, Jamuna Future Park 2.5 km
+  - Enquiry budget ranges (BDT crore), unit-size filter ranges, site-visit time slots
+
+  PROPOSED (our suggestion, not existing Rangs services)
+  - "Buying from abroad?" section: site visit by video call, help with documents, instalment-friendly payments
+  - Quick finder chips and the "For business" section framing
+
+  ASSUMED (please confirm)
+  - Area not given → pin placed near Gulshan–Banani, shown as "Area TBC": Rangs Waterfront, Rangs Panorama,
+    Garden Palace, Chayabithi, Taj Tower, Ulania House, Khan Palace, Eminence
+  - North Gulshan → Gulshan 2 position; Gulshan Avenue → Gulshan; Dhanmondi 27 → Dhanmondi
+  - Marc Residence(s): timeline lists it in 2016 (handed over) and 2017 (North Gulshan); shown as 2017
+  - Type not given → shown as Residential: Sayera Place, Saruala, Mayank, The Sanctuary, The Majestic,
+    White Lake, Bashira Heights, Kuheli, RK Square, Noorani Heights, Ixora, Torukabbo, Tree House, Torukunjo,
+    Sunset Square, T Cube, AK Square, Rancon One, Vantage 27, Belasheshe, The Heritage, Cloud & Creek,
+    Terminal S, Beaumont 53, The ION, Shireenz, Nahrira, Monarch, Haque Heights, SamaHa Park Panorama,
+    Rangs Korobi, Rangs Panorama, Garden Palace, Chayabithi, Taj Tower, Ulania House, Khan Palace, Rangs RD Square
+    (names that may be commercial — please check: RK Square, Sunset Square, T Cube, AK Square, Terminal S,
+    The ION, Taj Tower, Rangs RD Square)
+  - Card images reuse timeline photos where one year = one project: 1999 Rangabi, 2002 Korobi, 2004 Anam Plaza,
+    2006 Waterfront, 2010 KB Square, 2013 Nasim Square, 2017 Marc Residence, 2018 FC Square, 2019 RD Square,
+    2020 Eminence, 2023 Diorama, 2024 Z-Square, 2025 A & F Square, 2026 Terminal D. Others use the sand frame.
+  - The hero film, slides, logo and photos are hot-linked from rangsproperties.com; if that site blocks
+    hot-linking, the sand fallback frames show instead. Copy the files to our own host before launch.
+  - Only Dokhinayon has a full project page. Other projects offer "Enquire" until their pages are built.
+  - Draft copy for Rangs to approve: intro paragraph, short lines under core beliefs, How we build,
+    amenities, NRB section, landowner steps, section headlines.
+==========================================================================================
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rangs Properties — Creating Lifestyles since 1996</title>
+<meta name="description" content="Rangs Properties Ltd., a RANCON company. 30 years shaping Dhaka's skyline — completed, ongoing and upcoming homes and commercial spaces.">
+<meta name="theme-color" content="#0D0D0D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://rangsproperties.com">
+<link rel="preload" as="image" href="https://rangsproperties.com/assets/images/dynamic/admin/uploads/gallery/home-slider/1684326208nXl5n.jpg" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500;600&family=Hind+Siliguri:wght@400;500&display=swap" rel="stylesheet">
+<script>
+  // motion flag set before first paint, so animated elements never flash
+  (function () {
+    var rm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!rm) document.documentElement.classList.add('anim');
+    // safety: if the motion libraries never arrive, show everything
+    setTimeout(function () { if (!window.gsap) document.documentElement.classList.remove('anim'); }, 4000);
+  })();
+</script>
+<style>
+:root{
+  --night:#0D0D0D; --ivory:#F7F3EE; --sand:#ECE4D9; --stone:#8A8279; --stone-d:#5E574F; --hair:#DDD5CA;
+  --accent:#F48220; --accent-d:#DD6F12; --mute-d:#A9A196;
+  --serif:'Cormorant Garamond','Cormorant',Georgia,'Times New Roman',serif;
+  --sans:'Jost','Futura','Century Gothic',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --bn:'Hind Siliguri',system-ui,sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --gut:clamp(20px,5vw,80px); --hdr:84px; --max:1440px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none !important}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:120px}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto !important}
+.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
+.lenis.lenis-stopped{overflow:hidden}
+body{margin:0;background:var(--ivory);color:var(--night);font-family:var(--sans);font-weight:400;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;overflow-x:clip}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+[tabindex="-1"]:focus{outline:none}
+.sr-only{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:fixed;left:16px;top:-80px;z-index:500;background:var(--accent);color:var(--night);padding:12px 18px;text-decoration:none;font-weight:500;transition:top .3s}
+.skip:focus{top:12px}
+
+/* ---------- type ---------- */
+.display,.h-hero,.h1,.h2,.h3{font-family:var(--serif);font-weight:300;letter-spacing:-.01em;margin:0}
+.h-hero{font-size:clamp(54px,8.4vw,140px);line-height:.92}
+.h1{font-size:clamp(50px,7vw,112px);line-height:.94}
+.h2{font-size:clamp(40px,5.2vw,84px);line-height:.98}
+.h3{font-size:clamp(28px,2.6vw,40px);line-height:1.05;font-weight:400}
+.it{font-style:italic}
+.label{margin:0;font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--stone-d)}
+.dark .label{color:var(--mute-d)}
+.sl{display:flex;align-items:center;gap:14px;margin:0 0 28px;font-size:12px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--stone-d)}
+.sl b{font-weight:500;color:var(--night)}
+.sl::after{content:"";flex:0 0 56px;height:1px;background:currentColor;opacity:.5}
+.dark .sl{color:var(--mute-d)}.dark .sl b{color:var(--ivory)}
+.lede{font-size:clamp(17px,1.4vw,20px);line-height:1.65;color:#3D3832;max-width:56ch;margin:0}
+.dark .lede{color:#CFC8BE}
+.small{font-size:13px;color:var(--stone-d)}
+.dark .small{color:var(--mute-d)}
+
+/* ---------- layout ---------- */
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding-left:var(--gut);padding-right:var(--gut)}
+.sec{padding:clamp(80px,10vw,150px) 0;position:relative}
+.dark{background:var(--night);color:var(--ivory)}
+.sand{background:var(--sand)}
+.g12{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:clamp(40px,5vw,72px)}
+.hair{border:0;border-top:1px solid var(--hair);margin:0}
+.dark .hair{border-color:rgba(247,243,238,.14)}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;padding:0 28px;border:1px solid transparent;background:none;cursor:pointer;text-decoration:none;font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;transition:background .5s var(--ease),color .5s var(--ease),border-color .5s var(--ease)}
+.btn-o{background:var(--accent);color:var(--night)}.btn-o:hover{background:var(--accent-d)}
+.btn-line{border-color:currentColor}.btn-line:hover{background:rgba(138,130,121,.16)}
+.btn-n{background:var(--night);color:var(--ivory)}.btn-n:hover{background:#2A2826}
+.btn-s{min-height:44px;padding:0 20px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.lnk{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;padding:10px 0;border-bottom:1px solid currentColor;background:none;border-top:0;border-left:0;border-right:0;cursor:pointer}
+.lnk:hover{color:var(--accent-d)}
+.dark .lnk:hover{color:var(--accent)}
+.arw{transition:transform .5s var(--ease)}.lnk:hover .arw{transform:translateX(5px)}
+
+/* ---------- images ---------- */
+.im{position:relative;overflow:hidden;background:var(--sand)}
+.im img{width:100%;height:100%;object-fit:cover}
+.fb{position:absolute;inset:0;display:flex;align-items:flex-end;padding:18px;background:var(--sand);color:var(--stone-d);font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase}
+.fb::before{content:"";position:absolute;inset:12px;border:1px solid rgba(13,13,13,.1)}
+.fb span{position:relative}
+.dark .fb{background:#2A2622;color:#A9A196}
+.dark .fb::before{border-color:rgba(247,243,238,.12)}
+.anim .rv:not([data-m]){clip-path:inset(100% 0 0 0)}
+.anim .rv:not([data-m]) img{transform:scale(1.18)}
+.ln-in{display:inline-block}
+.anim .ln-in{transform:translateY(105%)}
+.anim .hero .ln-in,.anim .page-hero .ln-in{animation:lnUp 1.3s var(--ease) both;animation-delay:calc(.15s + var(--i) * .12s)}
+@keyframes lnUp{from{transform:translateY(105%)}to{transform:none}}
+.anim .hero .fade{animation:fadeUp 1.2s var(--ease) .55s both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.ln{display:block;overflow:hidden;padding-bottom:.04em}
+.anim .fade{opacity:0;transform:translateY(24px)}
+.w{opacity:1}
+
+/* ---------- header ---------- */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:80;height:var(--hdr);display:flex;align-items:center;gap:32px;padding:0 var(--gut);color:var(--ivory);transition:background .5s var(--ease),color .5s var(--ease),transform .6s var(--ease),border-color .5s;border-bottom:1px solid rgba(247,243,238,.14)}
+.hdr.solid{background:var(--ivory);color:var(--night);border-color:var(--hair)}
+.hdr.hide{transform:translateY(-100%)}
+.logo{display:flex;align-items:center;text-decoration:none;flex:none;height:44px}
+.logo img{height:40px;width:auto;max-width:170px}
+.logo .lw{display:block}.logo .ld{display:none}
+.hdr.solid .logo .lw{display:none}.hdr.solid .logo .ld{display:block}
+.logo .lt{display:none;flex-direction:column;gap:4px;line-height:1}
+.logo.nologo img{display:none !important}.logo.nologo .lt{display:flex}
+.lt b{font-family:var(--sans);font-weight:600;font-size:20px;letter-spacing:.3em}
+.lt small{font-size:9px;letter-spacing:.42em;opacity:.8}
+.nav{display:flex;align-items:center;gap:4px;font-size:13px;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
+.nav>a,.nav>.mm>button{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 12px;text-decoration:none;background:none;border:0;cursor:pointer;letter-spacing:inherit;text-transform:inherit;font-size:inherit;font-weight:inherit;position:relative}
+.nav>a::after,.nav>.mm>button::after{content:"";position:absolute;left:12px;right:12px;bottom:6px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.nav>a:hover::after,.nav>.mm>button:hover::after,.nav>a[aria-current="page"]::after{transform:scaleX(1)}
+.nav>a[aria-current="page"]::after{background:var(--accent)}
+.hdr-sp{flex:1}
+.hdr-r{display:flex;align-items:center;gap:20px;font-size:13px;font-weight:500;letter-spacing:.08em}
+.hdr-r a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;min-height:44px}
+.lang{display:inline-flex;align-items:center;gap:2px;opacity:.85}
+.lang button{background:none;border:0;cursor:pointer;min-height:44px;padding:0 5px;font-size:13px;letter-spacing:.08em}
+.lang button[aria-pressed="true"]{font-weight:600}
+.lang .bn{font-family:var(--bn);font-size:14px}
+.hdr .mob{display:none}
+.icon-btn{width:46px;height:46px;border:1px solid currentColor;background:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+/* mega menu */
+.mm{position:static}
+.mega{position:absolute;left:0;right:0;top:var(--hdr);background:var(--ivory);color:var(--night);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);box-shadow:0 40px 60px -40px rgba(13,13,13,.35)}
+.mega .in{max-width:var(--max);margin:0 auto;padding:44px var(--gut) 52px;display:grid;grid-template-columns:1fr 1.7fr 1.25fr;gap:56px;text-transform:none;letter-spacing:0}
+.mega h3{margin:0 0 18px}
+.mega .mst a{display:flex;justify-content:space-between;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--hair);text-decoration:none;font-family:var(--serif);font-size:30px;font-weight:300}
+.mega .mst a small{font-family:var(--sans);font-size:13px;color:var(--stone-d)}
+.mega .mst a:hover{color:var(--accent-d)}
+.mega .ar{display:grid;grid-template-columns:repeat(3,1fr);gap:6px 24px;font-size:14px;font-weight:400}
+.mega .ar a{text-decoration:none;display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid transparent}
+.mega .ar a:hover{border-color:var(--night)}
+.mega .ar small{color:var(--stone-d)}
+.mega .ft{text-decoration:none;display:flex;flex-direction:column;gap:12px}
+.mega .ft .im{aspect-ratio:16/10}
+.mega .ft .h3{font-size:34px}
+/* mobile menu */
+.mmenu{position:fixed;inset:0;z-index:79;background:var(--night);color:var(--ivory);display:flex;flex-direction:column;padding:calc(var(--hdr) + 20px) var(--gut) 40px;overflow:auto}
+.mmenu a.big{font-family:var(--serif);font-size:44px;font-weight:300;text-decoration:none;line-height:1.25;border-bottom:1px solid rgba(247,243,238,.12);padding:6px 0}
+.mmenu .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+
+/* floating actions */
+.fab{position:fixed;right:22px;bottom:22px;z-index:70;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.fab .wa{width:58px;height:58px;border-radius:50%;background:#1E9E57;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 16px 30px -12px rgba(0,0,0,.5);text-decoration:none}
+.fab .enq{position:fixed;right:0;top:50%;transform:translateY(-50%);writing-mode:vertical-rl;min-width:44px;padding:22px 0;background:var(--accent);color:var(--night);border:0;cursor:pointer;font-size:11px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;box-shadow:0 16px 30px -14px rgba(0,0,0,.45)}
+.fab .enq:hover{background:var(--accent-d)}
+.mbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:75;height:64px;padding-bottom:env(safe-area-inset-bottom);background:var(--night);border-top:1px solid rgba(247,243,238,.12)}
+.mbar a,.mbar button{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:var(--ivory);text-decoration:none;font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;background:none;border:0;cursor:pointer}
+.mbar .o{color:var(--accent)}
+.mbar [aria-current="page"]{color:var(--accent)}
+.pbar{display:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background:var(--night)}
+.hero-media{position:absolute;inset:0}
+.hero-media img,.hero-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.slides img{opacity:0;transition:opacity 1.8s ease,transform 9s linear;transform:scale(1.06)}
+.slides img.on{opacity:1;transform:scale(1)}
+.hero-video{opacity:0;transition:opacity 1.4s ease}
+.hero.vid .hero-video{opacity:1}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,13,.55) 0%,rgba(13,13,13,.15) 32%,rgba(13,13,13,.25) 60%,rgba(13,13,13,.82) 100%)}
+.hero-in{position:relative;padding-top:calc(var(--hdr) + 80px);padding-bottom:180px}
+.hero-in .label{color:#E2DBD1;margin-bottom:28px}
+.hero-sub{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(22px,2.2vw,32px);margin:22px 0 36px;color:#EDE6DC}
+.hero-ctrl{position:absolute;right:var(--gut);bottom:150px;display:flex;gap:8px;z-index:2}
+.hero-ctrl button{min-height:40px;padding:0 14px;background:rgba(13,13,13,.35);border:1px solid rgba(247,243,238,.35);color:var(--ivory);font-size:11px;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;backdrop-filter:blur(6px)}
+.cue{position:absolute;left:50%;bottom:120px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#E2DBD1;z-index:2}
+.cue i{width:1px;height:44px;background:rgba(247,243,238,.35);position:relative;overflow:hidden}
+.cue i::after{content:"";position:absolute;left:0;top:-40%;width:1px;height:40%;background:var(--ivory);animation:cue 2.6s var(--ease) infinite}
+@keyframes cue{to{top:100%}}
+.page-hero{position:relative;min-height:72vh;display:flex;align-items:flex-end;overflow:hidden;background:var(--night);color:var(--ivory)}
+.page-hero .im{position:absolute;inset:0}
+.page-hero .in{position:relative;padding-top:calc(var(--hdr) + 80px);padding-bottom:72px}
+.page-hero .shade{background:linear-gradient(180deg,rgba(13,13,13,.5),rgba(13,13,13,.2) 40%,rgba(13,13,13,.85))}
+
+/* finder */
+.finder-sec{position:relative;z-index:5;margin-top:-104px}
+.finder{display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) auto;background:var(--ivory);border:1px solid var(--hair);box-shadow:0 40px 80px -50px rgba(13,13,13,.6)}
+.finder label{display:flex;flex-direction:column;gap:4px;padding:18px 24px;border-right:1px solid var(--hair);font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--stone-d)}
+.finder select{width:100%;min-width:0;border:0;background:transparent;font-size:16px;letter-spacing:0;text-transform:none;color:var(--night);padding:6px 0;min-height:36px;cursor:pointer}
+.finder .btn{min-height:auto;height:100%;padding:0 40px}
+.qchips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;align-items:center}
+.chip{min-height:40px;padding:0 18px;border:1px solid var(--hair);background:transparent;cursor:pointer;font-size:13px;font-weight:400;letter-spacing:.04em;display:inline-flex;align-items:center;gap:8px;transition:all .4s var(--ease);text-decoration:none}
+.chip:hover{border-color:var(--night)}
+.chip[aria-pressed="true"],.chip[aria-selected="true"]{background:var(--night);color:var(--ivory);border-color:var(--night)}
+.dark .chip{border-color:rgba(247,243,238,.25)}
+.dark .chip[aria-pressed="true"]{background:var(--ivory);color:var(--night)}
+.chip small{opacity:.6}
+
+/* intro */
+.intro-p{font-family:var(--serif);font-weight:300;font-size:clamp(30px,3.6vw,56px);line-height:1.18;margin:0;max-width:30ch}
+.intro-p .w{transition:none}
+.stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin-top:clamp(64px,8vw,120px);border-top:1px solid var(--hair)}
+.stats div{padding:30px 24px 0 0}
+.stats b{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(56px,6vw,96px);line-height:.9}
+.stats span{display:block;margin-top:12px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--stone-d)}
+
+/* launches */
+.launch{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:end;padding:56px 0;border-top:1px solid rgba(247,243,238,.14)}
+.launch .im{grid-column:1/8;aspect-ratio:16/10}
+.launch .tx{grid-column:9/13;display:flex;flex-direction:column;gap:16px;padding-bottom:6px}
+.launch:nth-child(even) .im{grid-column:6/13;grid-row:1}
+.launch:nth-child(even) .tx{grid-column:1/5;grid-row:1}
+.launch .n{font-family:var(--serif);font-size:20px;color:var(--mute-d)}
+.launch .n b{font-weight:400;color:var(--accent)}
+.launch dl{margin:8px 0 10px;display:grid;grid-template-columns:auto 1fr;gap:8px 20px;font-size:14px}
+.launch dt{color:var(--mute-d);letter-spacing:.14em;text-transform:uppercase;font-size:11px;padding-top:3px}
+.launch dd{margin:0}
+
+/* cards */
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.cards{list-style:none;margin:0;padding:0;display:grid;gap:56px 28px;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr))}
+.card{display:flex;flex-direction:column;gap:16px;position:relative}
+.card .im{aspect-ratio:4/5}
+.card .im img{transition:transform 1.4s var(--ease),opacity .7s ease}
+.card:hover .im img{transform:scale(1.04)}
+.card .im .alt{position:absolute;inset:0;opacity:0}
+.card:hover .im .alt{opacity:1}
+.card .tags{position:absolute;left:14px;top:14px;display:flex;gap:6px;z-index:2}
+.st{display:inline-flex;align-items:center;min-height:26px;padding:0 10px;font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase}
+.st-ongoing{background:var(--accent);color:var(--night)}
+.st-upcoming{background:var(--ivory);color:var(--night);border:1px solid var(--night)}
+.st-completed{background:var(--night);color:var(--ivory)}
+.st-sold{background:var(--ivory);color:var(--night);border:1px dashed var(--night)}
+.card h3{margin:0;font-family:var(--serif);font-weight:400;font-size:32px;line-height:1}
+.card h3 a{text-decoration:none}
+.card h3 a::after{content:"";position:absolute;inset:0}
+.card .m{font-size:13px;letter-spacing:.06em;color:var(--stone-d)}
+.card .act{display:flex;gap:18px;align-items:center;position:relative;z-index:2}
+.prog{display:flex;align-items:center;gap:12px;font-size:12px;color:var(--stone-d)}
+.prog .bar{flex:1;height:2px;background:var(--hair)}
+.prog .bar i{display:block;height:100%;background:var(--accent)}
+
+/* marquee */
+.marq{overflow:hidden;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:22px 0;margin-bottom:clamp(56px,7vw,96px)}
+.marq .tr{display:flex;width:max-content;animation:marq 70s linear infinite}
+.marq span{font-family:var(--serif);font-weight:300;font-size:clamp(28px,3vw,44px);padding:0 28px;white-space:nowrap;display:inline-flex;align-items:center;gap:56px}
+.marq span::after{content:"";width:8px;height:8px;background:var(--accent);transform:rotate(45deg)}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* map */
+.mapgrid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(32px,4vw,72px);align-items:start}
+.map{position:relative;background:#EFE8DE;border:1px solid var(--hair)}
+.map svg{display:block;width:100%;height:auto}
+.map .land{fill:#F7F3EE;stroke:#CFC6B8;stroke-width:1.2}
+.map .river{fill:none;stroke:#B7C4C9;stroke-width:5;stroke-linecap:round;opacity:.8}
+.map .road{fill:none;stroke:#D9CFC1;stroke-width:1.6;stroke-linecap:round}
+.map .adot{fill:var(--stone)}
+.map .alab{font-family:var(--sans);font-size:11px;letter-spacing:.08em;text-transform:uppercase;fill:#6B645B;pointer-events:none}
+.map .area.hl .alab{fill:var(--night);font-weight:600}
+.map .area.hl .adot{fill:var(--night)}
+.pin{cursor:pointer;transition:opacity .4s ease}
+.pin circle{transition:r .3s var(--ease)}
+.pin .c-ongoing{fill:var(--accent);stroke:#fff;stroke-width:1.5}
+.pin .c-completed{fill:var(--night);stroke:#fff;stroke-width:1.5}
+.pin .c-upcoming{fill:#fff;stroke:var(--night);stroke-width:2}
+.pin.off{opacity:0;pointer-events:none}
+.pin.dim{opacity:.18}
+.pin.hl circle,.pin:hover circle,.pin:focus-visible circle{r:9}
+.pin:focus{outline:none}
+.pin:focus-visible circle{stroke:var(--accent);stroke-width:3}
+.mcard{position:absolute;z-index:4;width:260px;background:var(--ivory);border:1px solid var(--hair);box-shadow:0 30px 50px -30px rgba(13,13,13,.6);transform:translate(-50%,calc(-100% - 18px))}
+.mcard .im{aspect-ratio:16/9}
+.mcard .bd{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px}
+.mcard .x{position:absolute;right:6px;top:6px;z-index:3;width:36px;height:36px;border:0;background:rgba(247,243,238,.92);cursor:pointer}
+.mlegend{display:flex;flex-wrap:wrap;gap:18px;font-size:12px;letter-spacing:.08em;color:var(--stone-d);margin-top:14px}
+.mlegend i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:8px;vertical-align:-1px}
+.alist{list-style:none;margin:0;padding:0;columns:2;column-gap:32px}
+.alist li{break-inside:avoid}
+.alist button{width:100%;display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:11px 0;border:0;border-bottom:1px solid var(--hair);background:none;cursor:pointer;font-size:15px;text-align:left}
+.alist button:hover,.alist button.on{color:var(--accent-d)}
+.alist small{font-size:12px;color:var(--stone-d)}
+
+/* landmarks (pinned horizontal) */
+.lm{overflow:hidden}
+.lm-track{display:flex;gap:clamp(24px,3vw,48px);padding:0 var(--gut);width:max-content}
+.lm-item{width:min(60vw,calc(50vh * 16 / 9),980px);flex:none;display:flex;flex-direction:column;gap:22px}
+.lm-item .im{aspect-ratio:16/9}
+.lm.free .lm-track{width:auto;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px;scrollbar-width:thin}
+.lm.free .lm-item{scroll-snap-align:center}
+.lm-item .row{display:grid;grid-template-columns:110px 1fr;gap:20px;align-items:baseline}
+.lm-item .n{font-family:var(--serif);font-size:22px;color:var(--mute-d)}
+.lm-item h3{font-size:clamp(34px,3.4vw,56px)}
+
+/* timeline strip */
+.tl{display:flex;gap:28px;overflow-x:auto;margin:0;padding:0 var(--gut) 24px;scroll-padding-left:var(--gut);scroll-snap-type:x proximity;cursor:grab;scrollbar-width:thin}
+.tl.drag{cursor:grabbing;scroll-snap-type:none}
+.tl li{flex:0 0 clamp(260px,24vw,340px);scroll-snap-align:start;display:flex;flex-direction:column;gap:14px;list-style:none}
+.tl .im{aspect-ratio:4/5}
+.tl .y{font-family:var(--serif);font-weight:300;font-size:clamp(64px,6vw,96px);line-height:.85}
+.tl p{margin:0;font-size:15px;color:#3D3832}
+.tl img{pointer-events:none;-webkit-user-drag:none}
+
+/* R-A-N-G-S */
+.rg{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(32px,5vw,96px)}
+.rg-l{position:sticky;top:calc(var(--hdr) + 40px);align-self:start;display:flex;flex-direction:column}
+.rg-l span{font-family:var(--serif);font-weight:300;font-size:clamp(90px,10vw,150px);line-height:.82;transform:scaleY(1.22);transform-origin:0 0;margin-bottom:.2em;color:#D3CABD;transition:color .7s var(--ease)}
+.rg-l span.on{color:var(--accent)}
+.rg-p{min-height:78vh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center;border-top:1px solid var(--hair);padding:48px 0}
+.rg-p .im{aspect-ratio:1;background:var(--sand)}
+.rg-p .im img{object-fit:contain;padding:8%}
+.rg-p .h2{font-size:clamp(44px,4.6vw,72px)}
+.rg-p p{font-family:var(--serif);font-style:italic;font-size:clamp(24px,2.2vw,32px);margin:14px 0 0;color:#3D3832}
+
+/* business */
+.biz{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,96px);align-items:center}
+.biz .im{aspect-ratio:4/5}
+.biz ol{list-style:none;margin:28px 0 36px;padding:0}
+.biz li button{width:100%;display:grid;grid-template-columns:40px 1fr auto;gap:16px;align-items:baseline;text-align:left;padding:18px 0;border:0;border-bottom:1px solid rgba(247,243,238,.14);background:none;cursor:pointer;color:var(--ivory)}
+.biz li .n{font-family:var(--serif);color:var(--mute-d)}
+.biz li .nm{font-family:var(--serif);font-weight:300;font-size:clamp(28px,2.6vw,40px);line-height:1}
+.biz li small{font-size:12px;letter-spacing:.12em;color:var(--mute-d);text-transform:uppercase}
+.biz li button.on .nm,.biz li button:hover .nm{color:var(--accent)}
+
+/* stacking cards */
+.stack{display:flex;flex-direction:column;gap:28px}
+.sc{position:sticky;top:calc(var(--hdr) + 32px + var(--i) * 22px);min-height:56vh;background:var(--ivory);border:1px solid var(--hair);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);transform-origin:50% 0;will-change:transform}
+.sc .tx{padding:clamp(28px,4vw,64px);display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.sc .n{font-family:var(--serif);font-size:clamp(64px,6vw,104px);font-weight:300;line-height:.8;color:var(--accent)}
+.sc .im{min-height:280px}
+
+/* recognition / voices / nrb */
+.rec{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--hair)}
+.rec div{padding:32px 32px 0 0;display:flex;flex-direction:column;gap:14px}
+.rec .yr{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--stone-d)}
+.vc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,1.3fr);gap:24px}
+.vc blockquote{margin:0;background:var(--ivory);padding:32px;display:flex;flex-direction:column;justify-content:space-between;gap:24px;min-height:320px}
+.vc blockquote p{margin:0;font-family:var(--serif);font-size:26px;line-height:1.2;font-weight:300}
+.vc .vid{position:relative;min-height:320px;background:var(--night);color:var(--ivory);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;border:0;cursor:pointer}
+.vc .vid .play{width:72px;height:72px;border-radius:50%;border:1px solid var(--ivory);display:flex;align-items:center;justify-content:center}
+.nrb{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:56px}
+.nrb div{border-top:1px solid rgba(247,243,238,.2);padding-top:22px}
+.nrb b{display:block;font-family:var(--serif);font-weight:300;font-size:32px;line-height:1.05;margin-bottom:10px}
+.band{position:relative;min-height:80vh;display:flex;align-items:center;overflow:hidden;color:var(--ivory)}
+.band .im{position:absolute;inset:-12% 0}
+.band .shade{background:rgba(13,13,13,.5)}
+.band .in{position:relative}
+
+/* closing + footer */
+.close-ctas{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(247,243,238,.18);margin-top:64px}
+.close-ctas>*{display:flex;flex-direction:column;gap:10px;padding:28px 24px 28px 0;text-decoration:none;background:none;border:0;text-align:left;cursor:pointer;color:var(--ivory)}
+.close-ctas b{font-family:var(--serif);font-weight:300;font-size:clamp(30px,2.8vw,44px);line-height:1}
+.close-ctas>*:hover b{color:var(--accent)}
+.foot{background:var(--night);color:var(--ivory);border-top:1px solid rgba(247,243,238,.12)}
+.foot a{text-decoration:none}
+.foot .top{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr 1.4fr;gap:40px;padding:72px 0 56px}
+.foot .k{display:block;margin-bottom:16px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--mute-d)}
+.foot nav{display:flex;flex-direction:column;gap:10px;font-size:15px}
+.foot nav a:hover{color:var(--accent)}
+.nl{display:flex;border-bottom:1px solid rgba(247,243,238,.4)}
+.nl input{flex:1;background:transparent;border:0;padding:14px 0;color:var(--ivory);min-width:0}
+.nl button{background:none;border:0;color:var(--accent);cursor:pointer;font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:0 0 0 12px;min-height:48px}
+.foot .bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;padding:24px 0 36px;border-top:1px solid rgba(247,243,238,.12);font-size:12px;letter-spacing:.08em;color:var(--mute-d)}
+
+/* ---------- routes ---------- */
+.route{display:none}.route.active{display:block}
+/* projects page */
+.fbar{position:sticky;top:0;z-index:30;background:var(--ivory);border-bottom:1px solid var(--hair);transition:top .6s var(--ease)}
+body.hdr-shown .fbar{top:var(--hdr)}
+.fbar .in{display:flex;flex-wrap:wrap;gap:0;align-items:stretch}
+.fbar label{display:flex;flex-direction:column;gap:2px;padding:12px 20px 12px 0;margin-right:20px;border-right:1px solid var(--hair);font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--stone-d)}
+.fbar select{max-width:46vw;border:0;background:transparent;font-size:15px;letter-spacing:0;text-transform:none;color:var(--night);min-height:34px;cursor:pointer;padding:0}
+.fbar .chk{border-right:0}
+.fbar .tools{margin-left:auto;display:flex;align-items:center;gap:18px}
+.count{font-size:13px;color:var(--stone-d);letter-spacing:.06em}
+.count b{font-family:var(--serif);font-size:30px;font-weight:400;color:var(--night);margin-right:6px}
+.vt{display:inline-flex;border:1px solid var(--hair)}
+.vt button{min-height:40px;padding:0 16px;border:0;background:none;cursor:pointer;font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+.vt button[aria-pressed="true"]{background:var(--night);color:var(--ivory)}
+.chk{display:flex !important;flex-direction:row !important;align-items:center;gap:10px;cursor:pointer;min-height:44px;font-size:13px !important;letter-spacing:.04em !important;text-transform:none !important;color:var(--night) !important}
+.chk input{width:18px;height:18px;accent-color:var(--accent)}
+.empty{padding:80px 0 40px;max-width:760px}
+
+/* project detail */
+.pd{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:clamp(32px,4vw,72px);align-items:start}
+.ptabs{position:sticky;top:0;z-index:30;background:var(--ivory);border-bottom:1px solid var(--hair);transition:top .6s var(--ease)}
+body.hdr-shown .ptabs{top:var(--hdr)}
+.ptabs .in{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.ptabs a{flex:none;min-height:56px;display:inline-flex;align-items:center;padding:0 16px;text-decoration:none;font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--stone-d);border-bottom:2px solid transparent}
+.ptabs a.on{color:var(--night);border-color:var(--accent)}
+.pd section{padding:72px 0;border-bottom:1px solid var(--hair);scroll-margin-top:150px}
+.facts{margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--hair)}
+.facts div{padding:20px 20px 20px 0;border-bottom:1px solid var(--hair)}
+.facts dt{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--stone-d)}
+.facts dd{margin:6px 0 0;font-family:var(--serif);font-size:28px;line-height:1.1}
+.scard{position:sticky;top:calc(var(--hdr) + 80px);background:var(--night);color:var(--ivory);padding:32px;display:flex;flex-direction:column;gap:12px}
+.scard .btn{width:100%}
+.masonry{columns:3 220px;column-gap:14px}
+.masonry button{display:block;width:100%;margin:0 0 14px;padding:0;border:0;cursor:zoom-in;break-inside:avoid;background:none}
+.masonry .im{width:100%}
+.splan{display:grid;grid-template-columns:80px 1fr 1fr;gap:6px;max-width:560px}
+.splan .fl{display:flex;align-items:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--stone-d)}
+.splan button{min-height:48px;border:1px solid transparent;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;display:flex;align-items:center;justify-content:space-between;padding:0 14px}
+.u-Available{background:var(--accent);color:var(--night)}
+.u-Booked{background:var(--ivory);border-color:var(--night) !important;color:var(--night)}
+.u-Sold{background:#D9D1C5;color:#6B645B}
+.splan button[aria-pressed="true"]{outline:2px solid var(--night);outline-offset:2px}
+.splan .amen{grid-column:2/4;background:var(--sand);min-height:48px;display:flex;align-items:center;padding:0 14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--stone-d)}
+.udetail{border:1px solid var(--hair);padding:24px;margin-top:20px;max-width:560px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px}
+.amens{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.amens>div{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start;border-top:1px solid var(--hair);padding-top:20px}
+.amens svg{width:40px;height:40px;stroke:var(--night);fill:none;stroke-width:1.2}
+.ring{width:180px;height:180px;flex:none}
+.ring circle{fill:none;stroke-width:6}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(var(--n,4),minmax(0,1fr));counter-reset:s}
+.steps li{position:relative;padding:44px 20px 0 0;font-size:15px}
+.steps li::before{content:"";position:absolute;left:0;right:0;top:12px;height:1px;background:var(--hair)}
+.steps li::after{content:"";position:absolute;left:0;top:6px;width:13px;height:13px;border-radius:50%;background:var(--ivory);border:1px solid var(--stone)}
+.steps li.done::after{background:var(--night);border-color:var(--night)}
+.steps li.now::after{background:var(--accent);border-color:var(--accent)}
+.steps b{display:block;font-family:var(--serif);font-weight:400;font-size:24px;line-height:1.1;margin-bottom:6px}
+.dark .steps li::before{background:rgba(247,243,238,.2)}
+.dark .steps li::after{background:var(--night);border-color:var(--mute-d)}
+.dark .steps li.on::after{background:var(--accent);border-color:var(--accent)}
+.strip{display:flex;gap:12px;overflow-x:auto;padding-bottom:12px}
+.strip figure{margin:0;flex:0 0 200px}
+.strip .im{aspect-ratio:4/3}
+.strip figcaption{font-size:12px;letter-spacing:.1em;margin-top:8px;color:var(--stone-d)}
+.nb{list-style:none;margin:0;padding:0}
+.nb li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--hair)}
+.nb small{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--stone-d)}
+
+/* forms */
+.form{display:flex;flex-direction:column;gap:18px}
+.fgrid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr))}
+.fld{display:flex;flex-direction:column;gap:6px;font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--stone-d)}
+.dark .fld{color:var(--mute-d)}
+.inp{min-height:50px;width:100%;border:0;border-bottom:1px solid #BFB6A9;background:transparent;padding:0 2px;font-size:16px;letter-spacing:0;text-transform:none;color:var(--night);border-radius:0}
+.dark .inp{color:var(--ivory);border-color:rgba(247,243,238,.35)}
+.dark .inp option{color:var(--night)}
+.inp:focus{outline:none;border-color:var(--accent);box-shadow:0 1px 0 var(--accent)}
+textarea.inp{min-height:100px;padding:12px 2px;resize:vertical}
+.thanks{padding:24px 0}
+.thanks b{display:block;font-family:var(--serif);font-weight:300;font-size:44px;line-height:1;margin-bottom:12px}
+
+/* drawer + lightbox + toast */
+dialog{border:0;padding:0;color:var(--night);background:var(--ivory)}
+dialog::backdrop{background:rgba(13,13,13,.6)}
+.drawer{position:fixed;inset:0 0 0 auto;margin:0;height:100%;max-height:100%;width:min(520px,100vw);max-width:100vw;overflow:auto}
+.anim .drawer[open]{animation:dIn .7s var(--ease)}
+@keyframes dIn{from{transform:translateX(100%)}to{transform:none}}
+.drawer .in{padding:40px;min-height:100%;display:flex;flex-direction:column;gap:20px}
+.x{width:46px;height:46px;border:1px solid var(--hair);background:var(--ivory);cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.drawer .x{position:absolute;right:20px;top:20px}
+.lb{width:100vw;height:100vh;max-width:100vw;max-height:100vh;margin:0;background:var(--night);color:var(--ivory)}
+.lb .stage{position:absolute;inset:70px 70px 90px}
+.lb .stage .im{width:100%;height:100%;background:transparent}
+.lb .stage img{object-fit:contain}
+.lb .ctl{position:absolute;left:0;right:0;bottom:20px;display:flex;justify-content:center;align-items:center;gap:20px}
+.lb .x{position:absolute;right:20px;top:20px;background:transparent;color:var(--ivory);border-color:rgba(247,243,238,.35)}
+.lb .ctl button{width:50px;height:50px;border:1px solid rgba(247,243,238,.35);background:none;color:var(--ivory);cursor:pointer}
+.toast{position:fixed;left:50%;bottom:100px;z-index:400;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--night);color:var(--ivory);padding:14px 22px;font-size:14px;transition:all .5s var(--ease);max-width:calc(100vw - 32px);text-align:center;border:1px solid rgba(247,243,238,.2)}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* ---------- responsive ---------- */
+@media (max-width:1180px){
+  .nav>a,.nav>.mm>button{padding:0 8px}
+  .hdr-r .wa-t,.hdr-r .lang{display:none}
+  .mega .in{grid-template-columns:1fr 1.5fr}
+  .mega .ft{display:none}
+  .vc{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .foot .top{grid-template-columns:1fr 1fr 1fr}
+}
+@media (max-width:980px){
+  :root{--hdr:68px}
+  .nav,.hdr-r .desk{display:none !important}
+  .hdr .mob{display:inline-flex}
+  .fab{bottom:80px;right:14px}
+  .fab .enq{display:none}
+  .mbar{display:flex}
+  body{padding-bottom:64px}
+  body.on-project .mbar{display:none}
+  body.on-project .pbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:75;background:var(--night);padding:8px 8px calc(8px + env(safe-area-inset-bottom));gap:6px}
+  body.on-project .pbar>*{flex:1 1 0;min-width:0;min-height:48px;padding:0 4px;font-size:10px;letter-spacing:.08em}
+  .finder{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .finder label:nth-child(2){border-right:0}
+  .finder label{border-bottom:1px solid var(--hair)}
+  .finder .btn{grid-column:1/-1;min-height:56px}
+  .finder-sec{margin-top:-70px}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stats div:last-child{grid-column:1/-1}
+  .launch .im,.launch:nth-child(even) .im{grid-column:1/-1;grid-row:auto}
+  .launch .tx,.launch:nth-child(even) .tx{grid-column:1/-1;grid-row:auto;margin-top:24px}
+  .mapgrid,.biz,.rg,.pd{grid-template-columns:1fr}
+  .rg-l{position:static;flex-direction:row;gap:10px}
+  .rg-l span{font-size:64px;margin:0}
+  .rg-p{grid-template-columns:1fr;min-height:auto}
+  .lm-item{width:82vw}
+  .sc{grid-template-columns:1fr;min-height:auto}
+  .sc .im{min-height:200px;order:-1}
+  .rec,.nrb{grid-template-columns:1fr}
+  .vc{grid-template-columns:1fr}
+  .close-ctas{grid-template-columns:1fr 1fr}
+  .foot .top{grid-template-columns:1fr 1fr}
+  .scard{display:none}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .amens{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:0}
+  .steps li{padding:0 0 22px 32px}
+  .steps li::before{left:6px;right:auto;top:18px;bottom:0;width:1px;height:auto}
+  .steps li::after{top:4px}
+  .hero-ctrl{bottom:auto;top:calc(var(--hdr) + 14px)}
+  .cue{display:none}
+  .hero-in{padding-bottom:130px}
+  .fbar .tools{margin-left:0;width:100%;justify-content:space-between;padding:8px 0}
+  .fbar label{padding:10px 14px 10px 0;margin-right:14px}
+  .alist{columns:1}
+  .mcard{width:220px}
+}
+@media (max-width:560px){
+  .close-ctas{grid-template-columns:1fr}
+  .foot .top{grid-template-columns:1fr}
+  .facts dd{font-size:22px}
+  .lb .stage{inset:60px 8px 90px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .marq .tr{flex-wrap:wrap;width:auto}
+}
+</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-ph" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="1.3" d="M3.5 1.8h2.6l1.2 3-1.6 1.1a8 8 0 0 0 4.4 4.4l1.1-1.6 3 1.2v2.6a1.6 1.6 0 0 1-1.7 1.6A12.4 12.4 0 0 1 1.9 3.5a1.6 1.6 0 0 1 1.6-1.7z"/></symbol>
+ <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4 5.2 5.2 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></symbol>
+ <symbol id="i-ar" viewBox="0 0 20 10"><path d="M0 5h18M14 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></symbol>
+ <symbol id="i-dn" viewBox="0 0 12 12"><path d="M2.5 4.5l3.5 3.5 3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+ <symbol id="i-x" viewBox="0 0 18 18"><path d="M4 4l10 10M14 4L4 14" stroke="currentColor" stroke-width="1.3"/></symbol>
+ <symbol id="i-menu" viewBox="0 0 22 22"><path d="M3 7h16M3 15h16" stroke="currentColor" stroke-width="1.3"/></symbol>
+ <symbol id="i-home" viewBox="0 0 20 20"><path fill="none" stroke="currentColor" stroke-width="1.3" d="M3 9l7-6 7 6v8H3z"/></symbol>
+ <symbol id="i-grid" viewBox="0 0 20 20"><g fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="6" height="6"/><rect x="11" y="3" width="6" height="6"/><rect x="3" y="11" width="6" height="6"/><rect x="11" y="11" width="6" height="6"/></g></symbol>
+ <symbol id="i-pin" viewBox="0 0 20 20"><g fill="none" stroke="currentColor" stroke-width="1.3"><path d="M10 18s6-5.4 6-10a6 6 0 0 0-12 0c0 4.6 6 10 6 10z"/><circle cx="10" cy="8" r="2"/></g></symbol>
+ <symbol id="i-chat" viewBox="0 0 20 20"><path fill="none" stroke="currentColor" stroke-width="1.3" d="M3 5h14v9H8l-4 3V5z"/></symbol>
+ <symbol id="i-l" viewBox="0 0 16 16"><path d="M10 3L5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+ <symbol id="i-r" viewBox="0 0 16 16"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+ <symbol id="i-play" viewBox="0 0 20 20"><path d="M7 4l9 6-9 6z" fill="currentColor"/></symbol>
+</svg>
+
+<a class="skip" href="#main" data-skip>Skip to content</a>
+
+<!-- ================= HEADER ================= -->
+<header class="hdr" id="hdr">
+ <a class="logo" href="#/" aria-label="Rangs Properties, home" id="logo">
+  <img class="lw" data-src="logoWhite" alt="Rangs Properties" width="150" height="40">
+  <img class="ld" data-src="logo" alt="Rangs Properties" width="150" height="40">
+  <span class="lt" aria-hidden="true"><b>RANGS</b><small>PROPERTIES</small></span>
+ </a>
+ <nav class="nav" aria-label="Main">
+  <div class="mm" id="mm">
+   <button type="button" aria-expanded="false" aria-controls="mega" id="mmBtn">Projects <svg width="12" height="12"><use href="#i-dn"/></svg></button>
+   <div class="mega" id="mega" hidden data-lenis-prevent>
+    <div class="in">
+     <div class="mst"><p class="label" style="margin-bottom:12px">By status</p><div id="mmStatus"></div><a href="#/projects" class="lnk" style="margin-top:22px;border:0;font-family:var(--sans);font-size:12px">Open the map <svg class="arw" width="20" height="10"><use href="#i-ar"/></svg></a></div>
+     <div><p class="label" style="margin-bottom:18px">By area</p><div class="ar" id="mmAreas"></div></div>
+     <a class="ft" href="#/" data-launch="terminal-d" id="mmFeat">
+      <p class="label">Featured launch · 01 / 03</p>
+      <div class="im" data-img="p:terminal-d" data-alt="Terminal D" data-w="640" data-h="400"></div>
+      <span class="h3">Terminal D</span>
+      <span class="small">Diabari, Uttara · Commercial · Price on request</span>
+      <span class="lnk" style="align-self:flex-start">Register interest <svg class="arw" width="20" height="10"><use href="#i-ar"/></svg></span>
+     </a>
+    </div>
+   </div>
+  </div>
+  <a href="#/about" data-nav="about">About</a>
+  <a href="#/landowners" data-nav="landowners">Landowners</a>
+  <a href="#/about/stories" data-nav="stories">Stories</a>
+  <a href="#/contact" data-nav="contact">Contact</a>
+ </nav>
+ <div class="hdr-sp"></div>
+ <div class="hdr-r">
+  <a class="desk" href="tel:16677" aria-label="Call hotline 16677"><svg width="15" height="15"><use href="#i-ph"/></svg>16677</a>
+  <a class="desk" href="https://wa.me/" data-wa><svg width="16" height="16"><use href="#i-wa"/></svg><span class="wa-t">WhatsApp</span></a>
+  <span class="lang desk" role="group" aria-label="Language"><button type="button" aria-pressed="true">EN</button><span aria-hidden="true">|</span><button type="button" aria-pressed="false" class="bn" data-bn title="Bangla version coming soon">বাং</button></span>
+  <a class="btn btn-o btn-s desk" href="#/projects">Find a home</a>
+  <a class="mob icon-btn" href="tel:16677" aria-label="Call hotline 16677"><svg width="16" height="16"><use href="#i-ph"/></svg></a>
+  <button class="mob icon-btn" type="button" data-menu aria-expanded="false" aria-controls="mmenu" aria-label="Open menu"><svg width="20" height="20"><use href="#i-menu"/></svg></button>
+ </div>
+</header>
+
+<nav class="mmenu" id="mmenu" aria-label="Menu" hidden data-lenis-prevent>
+ <a class="big" href="#/">Home</a><a class="big" href="#/projects">Projects</a><a class="big" href="#/project/dokhinayon">Dokhinayon</a><a class="big" href="#/about">About</a><a class="big" href="#/landowners">Landowners</a><a class="big" href="#/about/stories">Stories</a><a class="big" href="#/contact">Contact</a>
+ <div class="row"><a class="btn btn-o" href="tel:16677">Call 16677</a><a class="btn btn-line" href="https://wa.me/" data-wa>WhatsApp</a><button class="btn btn-line" type="button" data-enq>Enquire</button></div>
+ <span class="lang" role="group" aria-label="Language" style="margin-top:20px"><button type="button" aria-pressed="true">EN</button><span aria-hidden="true">|</span><button type="button" aria-pressed="false" class="bn" data-bn>বাং</button></span>
+</nav>
+
+<div class="fab"><a class="wa" href="https://wa.me/" data-wa aria-label="Chat on WhatsApp"><svg width="28" height="28"><use href="#i-wa"/></svg></a><button type="button" class="enq" data-enq>Enquire</button></div>
+
+<div id="main" tabindex="-1"></div>
+
+<!-- ================= HOME ================= -->
+<main class="route" data-route="home">
+ <section class="hero dark" id="hero" aria-labelledby="heroH">
+  <div class="hero-media">
+   <div class="slides" id="slides">
+    <img class="on" src="https://rangsproperties.com/assets/images/dynamic/admin/uploads/gallery/home-slider/1684326208nXl5n.jpg" alt="" width="1920" height="1080" fetchpriority="high" decoding="async" onerror="this.style.display='none'">
+   </div>
+   <video class="hero-video" id="heroVideo" muted loop playsinline preload="none" aria-hidden="true" poster="https://rangsproperties.com/assets/images/dynamic/admin/uploads/gallery/home-slider/1684326208nXl5n.jpg"></video>
+   <div class="shade"></div>
+  </div>
+  <div class="hero-in wrap">
+   <p class="label">Rangs Properties · A RANCON company · 1996 — 2026</p>
+   <h1 class="h-hero" id="heroH" data-lines>Creating Lifestyles<br>since 1996</h1>
+   <p class="hero-sub fade">30 years shaping Dhaka's skyline.</p>
+   <div class="btns fade"><a class="btn btn-o" href="#/projects">Explore projects</a><button type="button" class="btn btn-line" data-enq="visit">Book a visit</button></div>
+  </div>
+  <div class="hero-ctrl"><button type="button" id="vMute" aria-pressed="false">Sound off</button><button type="button" id="vReplay">Replay</button></div>
+  <div class="cue" aria-hidden="true"><i></i>Scroll</div>
+ </section>
+
+ <section class="finder-sec" aria-label="Find a home">
+  <div class="wrap">
+   <form class="finder" id="finder">
+    <label>Status<select name="status"><option value="all">Any status</option><option value="completed">Completed</option><option value="ongoing">Ongoing</option><option value="upcoming">Upcoming</option></select></label>
+    <label>Type<select name="type"><option value="all">Any type</option><option>Residential</option><option>Commercial</option></select></label>
+    <label>Area<select name="area" data-areas><option value="all">All areas</option></select></label>
+    <label>Unit size<select name="size"><option value="all">Any size</option><option value="s">Up to 1,500 sq ft</option><option value="m">1,500 – 2,500 sq ft</option><option value="l">2,500 sq ft +</option></select></label>
+    <button class="btn btn-o" type="submit">Search</button>
+   </form>
+   <div class="qchips"><span class="label" style="margin-right:6px">Quick</span>
+    <button type="button" class="chip" data-quick="completed">Ready to move</button>
+    <button type="button" class="chip" data-quick="ongoing">Under construction</button>
+    <button type="button" class="chip" data-quick="upcoming">Launching soon</button>
+    <button type="button" class="chip" data-quick="Commercial">Commercial</button>
+   </div>
+  </div>
+ </section>
+
+ <section class="sec" aria-labelledby="introH">
+  <div class="wrap">
+   <p class="sl"><b>01</b> About Rangs</p>
+   <h2 class="sr-only" id="introH">About Rangs Properties</h2>
+   <p class="intro-p" data-words>Since 1996, Rangs Properties has built homes and workplaces across Dhaka with one idea in mind: less, but better. Thirty years on, our buildings stand in eighteen areas of the city — designed to last, built to code, and made for the way families live.</p>
+   <div class="stats" id="stats"></div>
+  </div>
+ </section>
+
+ <section class="sec dark" aria-labelledby="launchH">
+  <div class="wrap">
+   <div class="head"><div><p class="sl"><b>02</b> New launches</p><h2 class="h2" id="launchH" data-lines>Coming next<br>to Dhaka</h2></div><p class="lede" style="max-width:38ch">Three new addresses, launching soon. Register your interest to hear first about prices and floor plans.</p></div>
+   <div id="launches"></div>
+   <a class="lnk" href="#/projects" data-filter='{"status":"upcoming"}' style="margin-top:40px">All 13 upcoming projects <svg class="arw" width="20" height="10"><use href="#i-ar"/></svg></a>
+  </div>
+ </section>
+
+ <section class="sec" aria-labelledby="pjH">
+  <div class="wrap">
+   <div class="head"><div><p class="sl"><b>03</b> Projects</p><h2 class="h2" id="pjH" data-lines>Every Rangs address</h2></div>
+    <div class="tabs" role="tablist" aria-label="Project status" id="homeTabs"></div></div>
+   <ul class="cards" id="homeCards" role="tabpanel" aria-labelledby="homeTabs"></ul>
+   <a class="lnk" href="#/projects" style="margin-top:56px">View all projects <svg class="arw" width="20" height="10"><use href="#i-ar"/></svg></a>
+  </div>
+ </section>
+
+ <section class="sec" aria-labelledby="mapH" style="padding-top:0">
+  <div class="marq" aria-hidden="true"><div class="tr" id="marq"></div></div>
+  <div class="wrap">
+   <div class="head"><div><p class="sl"><b>04</b> Explore by area</p><h2 class="h2" id="mapH" data-lines>Find us across<br>the city</h2></div><p class="lede" style="max-width:36ch">Every completed, ongoing and upcoming Rangs project on one map. Tap a pin to see the project.</p></div>
+   <div data-map="home"></div>
+  </div>
+ </section>
+
+ <section class="sec dark lm" id="lm" aria-labelledby="lmH">
+  <div class="wrap"><div class="head"><div><p class="sl"><b>05</b> Landmarks</p><h2 class="h2" id="lmH" data-lines>Addresses Dhaka knows</h2></div><p class="small" id="lmHint">Scroll to move through them</p></div></div>
+  <div class="lm-track" id="lmTrack"></div>
+ </section>
+
+ <section class="sec" aria-labelledby="tlH">
+  <div class="wrap"><div class="head"><div><p class="sl"><b>06</b> 30 years</p><h2 class="h2" id="tlH" data-lines>Thirty years,<br>year by year</h2></div><p class="small">Drag or scroll sideways</p></div></div>
+  <ol class="tl" id="tlStrip" data-lenis-prevent aria-label="Timeline"></ol>
+ </section>
+
+ <section class="sec" aria-labelledby="rgH" style="padding-top:40px">
+  <div class="wrap">
+   <p class="sl"><b>07</b> Our philosophy</p>
+   <h2 class="sr-only" id="rgH">R-A-N-G-S</h2>
+   <div class="rg"><div class="rg-l" aria-hidden="true" id="rgL"></div><div id="rgP"></div></div>
+  </div>
+ </section>
+
+ <section class="sec dark" aria-labelledby="bizH">
+  <div class="wrap biz">
+   <div class="im rv" id="bizImg" data-w="900" data-h="1125"></div>
+   <div>
+    <p class="sl"><b>08</b> For business</p>
+    <h2 class="h2" id="bizH" data-lines>Spaces built<br>for business</h2>
+    <p class="lede" style="margin-top:24px">Commercial addresses in Gulshan, Dhanmondi and Uttara — from completed towers to new launches.</p>
+    <ol id="bizList"></ol>
+    <a class="lnk" href="#/projects" data-filter='{"type":"Commercial"}'>Explore commercial spaces <svg class="arw" width="20" height="10"><use href="#i-ar"/></svg></a>
+   </div>
+  </div>
+ </section>
+
+ <section class="sec" aria-labelledby="buildH">
+  <div class="wrap">
+   <div class="head"><div><p class="sl"><b>09</b> How we build</p><h2 class="h2" id="buildH" data-lines>Built right,<br>then looked after</h2></div></div>
+   <div class="stack" id="stack"></div>
+  </div>
+ </section>
+
+ <section class="sec" aria-labelledby="recH" style="padding-top:0">
+  <div class="wrap">
+   <p class="sl"><b>10</b> Recognition</p>
+   <h2 class="h2" id="recH" data-lines style="margin-bottom:48px">Recognised for<br>how we build</h2>
+   <div class="rec">
+    <div><span class="yr">Year TBC</span><p class="h3">First real estate company in Bangladesh to join the UN Global Compact</p></div>
+    <div><span class="yr">Year TBC</span><p class="h3">Honourable Mention for “Green Fencing” — Best Innovation, SDG Inclusion</p></div>
+    <div><span class="yr">Every building</span><p class="h3">Designed and built to the Bangladesh National Building Code (BNBC)</p></div>
+   </div>
+  </div>
+ </section>
+
+ <section class="sec sand" aria-labelledby="vcH">
+  <div class="wrap">
+   <p class="sl"><b>11</b> Voices</p>
+   <h2 class="h2" id="vcH" data-lines style="margin-bottom:48px">In their words</h2>
+   <div class="vc">
+    <blockquote><p>“[Homeowner quote 1 — to be supplied by Rangs.]”</p><footer class="small">[Name] · [Project]</footer></blockquote>
+    <blockquote><p>“[Homeowner quote 2 — to be supplied by Rangs.]”</p><footer class="small">[Name] · [Project]</footer></blockquote>
+    <blockquote><p>“[Homeowner quote 3 — to be supplied by Rangs.]”</p><footer class="small">[Name] · [Project]</footer></blockquote>
+    <button type="button" class="vid" data-tbc="Video testimonial"><span class="play"><svg width="22" height="22"><use href="#i-play"/></svg></span><span class="label" style="color:var(--mute-d)">Video testimonial · coming soon</span></button>
+   </div>
+  </div>
+ </section>
+
+ <section class="sec dark" aria-labelledby="nrbH">
+  <div class="wrap">
+   <div class="head"><div><p class="sl"><b>12</b> Buying from abroad?</p><h2 class="h2" id="nrbH" data-lines>Home, from<br>wherever you are</h2></div><button type="button" class="btn btn-o" data-enq="nrb">Talk to an NRB advisor</button></div>
+   <div class="nrb">
+    <div><b>Site visit by video call</b><p class="small">Walk the site and the show flat with an advisor, live.</p></div>
+    <div><b>Help with documents</b><p class="small">Support with paperwork and power of attorney.</p></div>
+    <div><b>Instalment-friendly payments</b><p class="small">A payment schedule that fits your time zone and pay cycle.</p></div>
+   </div>
+  </div>
+ </section>
+
+ <section class="band" aria-labelledby="landH">
+  <div class="im" data-img="slide:2" data-alt="" data-parallax data-w="1920" data-h="1080"></div><div class="shade"></div>
+  <div class="in wrap">
+   <p class="sl" style="color:#E2DBD1"><b style="color:var(--ivory)">13</b> Landowners</p>
+   <h2 class="h1" id="landH" data-lines>Have land?<br>Build with Rangs.</h2>
+   <p class="lede" style="color:#E7E0D6;margin:24px 0 36px">Joint-venture development, backed by thirty years of building in Dhaka.</p>
+   <a class="btn btn-o" href="#/landowners">Submit your land</a>
+  </div>
+ </section>
+
+ <section class="sec" id="storiesHome" aria-labelledby="stH">
+  <div class="wrap">
+   <div class="head"><div><p class="sl"><b>14</b> Stories &amp; press</p><h2 class="h2" id="stH" data-lines>News from our sites</h2></div><a class="lnk" href="#/about/stories">All stories <svg class="arw" width="20" height="10"><use href="#i-ar"/></svg></a></div>
+   <div class="cards" data-stories></div>
+  </div>
+ </section>
+
+ <section class="sec dark" aria-labelledby="closeH">
+  <div class="wrap">
+   <h2 class="h1" id="closeH" data-lines>Every home starts<br>with a conversation.</h2>
+   <div class="close-ctas">
+    <a href="tel:16677"><span class="label">Call</span><b style="color:var(--accent)">16677</b></a>
+    <a href="https://wa.me/" data-wa><span class="label">Message</span><b>WhatsApp</b></a>
+    <button type="button" data-enq="visit"><span class="label">See it yourself</span><b>Book a site visit</b></button>
+    <a href="#/contact"><span class="label">Visit our HQ</span><b>Rangs Babylonia</b><span class="small">246 Bir Uttam Mir Shawkat Road, Tejgaon I/A, Dhaka-1208</span></a>
+   </div>
+  </div>
+ </section>
+</main>
+
+<!-- ================= PROJECTS ================= -->
+<main class="route" data-route="projects">
+ <section class="page-hero" aria-labelledby="pjsH">
+  <div class="im" data-img="slide:1" data-alt="" data-parallax data-eager data-w="1920" data-h="1080"></div><div class="shade"></div>
+  <div class="in wrap"><p class="label" style="color:#E2DBD1;margin-bottom:20px">Completed · Ongoing · Upcoming</p><h1 class="h1" id="pjsH" data-lines>Projects</h1><p class="lede" style="color:#E7E0D6;margin-top:20px">Homes and commercial spaces across eighteen areas of Dhaka.</p></div>
+ </section>
+ <div class="fbar"><div class="wrap"><div class="in">
+  <label>Status<select id="fStatus"><option value="all">All</option><option value="completed">Completed</option><option value="ongoing">Ongoing</option><option value="upcoming">Upcoming</option></select></label>
+  <label>Type<select id="fType"><option value="all">All</option><option>Residential</option><option>Commercial</option></select></label>
+  <label>Area<select id="fArea" data-areas><option value="all">All areas</option></select></label>
+  <label>Unit size<select id="fSize"><option value="all">Any</option><option value="s">Up to 1,500 sq ft</option><option value="m">1,500 – 2,500 sq ft</option><option value="l">2,500 sq ft +</option></select></label>
+  <label class="chk"><input type="checkbox" id="fSold" checked>Show sold out</label>
+  <label>Sort<select id="fSort"><option value="new">Newest</option><option value="az">A – Z</option></select></label>
+  <div class="tools"><p class="count" aria-live="polite"><b id="pjCount">52</b><span id="pjWord">projects</span></p>
+   <div class="vt" role="group" aria-label="View"><button type="button" data-view="grid" aria-pressed="true">Grid</button><button type="button" data-view="map" aria-pressed="false">Map</button></div></div>
+ </div></div></div>
+ <section class="sec" style="padding-top:56px" aria-label="Results">
+  <div class="wrap">
+   <p class="small" id="sizeNote" hidden style="margin:0 0 24px">Unit sizes are confirmed only for Dokhinayon so far. Other projects: TBC.</p>
+   <ul class="cards" id="pjGrid"></ul>
+   <div data-map="projects" id="pjMap" hidden></div>
+   <div class="empty" id="pjEmpty" hidden>
+    <h2 class="h2">No project matches yet</h2>
+    <p class="lede" style="margin:18px 0 28px">Try fewer filters, or tell us what you're looking for and we'll call you when a matching home launches.</p>
+    <div class="btns"><button type="button" class="btn btn-n" data-clear>Clear filters</button><button type="button" class="btn btn-line" data-enq="launch">Register for new launches</button></div>
+   </div>
+  </div>
+ </section>
+</main>
+
+<!-- ================= PROJECT DETAIL ================= -->
+<main class="route" data-route="project">
+ <section class="page-hero" style="min-height:86vh" aria-labelledby="dkH">
+  <div class="im" data-img="dk:0" data-alt="Dokhinayon, exterior" data-parallax data-eager data-w="1920" data-h="1080"></div><div class="shade"></div>
+  <div class="in wrap">
+   <p class="label" style="color:#E2DBD1;margin-bottom:18px"><a href="#/projects" style="text-decoration:none">Projects</a> / Bashundhara R/A</p>
+   <span class="st st-ongoing">Ongoing</span>
+   <h1 class="h1" id="dkH" data-lines style="margin-top:18px">Dokhinayon</h1>
+   <p class="lede" style="color:#E7E0D6;margin-top:16px">Road-18/A, Block-M, Bashundhara R/A, Dhaka</p>
+  </div>
+ </section>
+ <nav class="ptabs" aria-label="Project sections"><div class="wrap"><div class="in" id="ptabs">
+  <a href="#overview" data-sec="overview">Overview</a><a href="#gallery" data-sec="gallery">Gallery</a><a href="#availability" data-sec="availability">Availability</a><a href="#plans" data-sec="plans">Floor plans</a><a href="#amenities" data-sec="amenities">Amenities</a><a href="#location" data-sec="location">Location</a><a href="#progress" data-sec="progress">Progress</a><a href="#payment" data-sec="payment">Payment</a>
+ </div></div></nav>
+ <div class="wrap pd">
+  <div>
+   <section id="overview" aria-labelledby="ovH" style="padding-top:56px">
+    <h2 class="sr-only" id="ovH">Overview</h2>
+    <dl class="facts">
+     <div style="grid-column:1/-1"><dt>Address</dt><dd>Road-18/A, Block-M, Bashundhara R/A</dd></div>
+     <div><dt>Land</dt><dd>9 katha</dd></div><div><dt>Height</dt><dd>G+9</dd></div><div><dt>Units</dt><dd>16</dd></div>
+     <div><dt>Unit size</dt><dd>approx. 2,030 sq ft</dd></div><div><dt>Status</dt><dd>Ongoing</dd></div><div><dt>Handover</dt><dd>TBC</dd></div>
+     <div style="grid-column:1/-1"><dt>Design consultant</dt><dd>Inspace Architects Ltd.</dd></div>
+    </dl>
+    <p class="intro-p" style="font-size:clamp(26px,2.6vw,38px);margin-top:48px">Sixteen homes on a quiet road in Block-M, two to a floor. Dokhinayon rises ten levels on 9 katha, with a rooftop garden and fitness centre above — designed with Inspace Architects Ltd.</p>
+   </section>
+   <section id="gallery" aria-labelledby="galH"><p class="sl"><b>A</b> Gallery</p><h2 class="h2" id="galH" style="margin-bottom:32px">Gallery</h2><div class="masonry" id="dkGal"></div></section>
+   <section id="availability" aria-labelledby="avH">
+    <p class="sl"><b>B</b> Availability</p><h2 class="h2" id="avH" style="margin-bottom:16px">Choose your home</h2>
+    <p class="small" style="margin:0 0 28px">Tap a unit. Status shown is demo data.</p>
+    <div class="splan" id="splan" role="group" aria-label="Stacking plan"></div>
+    <div class="mlegend" style="max-width:560px"><span><i style="background:var(--accent)"></i>Available</span><span><i style="background:var(--ivory);border:1px solid var(--night)"></i>Booked</span><span><i style="background:#D9D1C5"></i>Sold</span></div>
+    <div class="udetail" id="udetail" aria-live="polite"></div>
+   </section>
+   <section id="plans" aria-labelledby="plH">
+    <p class="sl"><b>C</b> Floor plans</p><h2 class="h2" id="plH" style="margin-bottom:24px">Floor plans</h2>
+    <div class="tabs" role="tablist" aria-label="Unit" id="planTabs"><button type="button" class="chip" role="tab" aria-selected="true" data-plan="A" id="tabA" aria-controls="planP">Unit A</button><button type="button" class="chip" role="tab" aria-selected="false" data-plan="B" id="tabB" aria-controls="planP" tabindex="-1">Unit B</button></div>
+    <div id="planP" role="tabpanel" aria-labelledby="tabA" style="margin-top:24px">
+     <div class="im" style="aspect-ratio:4/3;background:#FBF8F4;border:1px solid var(--hair)"><div class="fb" style="background:#FBF8F4"><span id="planLbl">Floor plan · Unit A · placeholder</span></div></div>
+     <p class="small" style="margin-top:14px">approx. 2,030 sq ft · Bedrooms, bathrooms and facing: TBC</p>
+    </div>
+   </section>
+   <section id="amenities" aria-labelledby="amH">
+    <p class="sl"><b>D</b> Amenities</p><h2 class="h2" id="amH" style="margin-bottom:36px">Amenities</h2>
+    <div class="amens">
+     <div><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 34h28M10 34V14h20v20M16 34v-8h8v8M14 18h4M22 18h4"/></svg><div><h3 class="h3" style="font-size:28px">Lobby Lounge</h3><p class="small">A calm, double-height welcome at ground level.</p></div></div>
+     <div><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 14h32M8 14v6h24v-6M12 20v6h16v-6M16 26v6h8v-6"/></svg><div><h3 class="h3" style="font-size:28px">Sunken Court</h3><p class="small">An open court set below street level.</p></div></div>
+     <div><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 34V18M20 18c-6 0-10-4-10-10 6 0 10 4 10 10zM20 22c5 0 9-3 9-9-5 0-9 3-9 9zM8 34h24"/></svg><div><h3 class="h3" style="font-size:28px">Rooftop Garden</h3><p class="small">Green space above the city, for every resident.</p></div></div>
+     <div><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 20h4M30 20h4M10 14v12M30 14v12M14 17v6M26 17v6M14 20h12"/></svg><div><h3 class="h3" style="font-size:28px">Fitness Centre</h3><p class="small">On the top floor, beside the garden.</p></div></div>
+    </div>
+   </section>
+   <section id="location" aria-labelledby="loH">
+    <p class="sl"><b>E</b> Location</p><h2 class="h2" id="loH" style="margin-bottom:32px">Bashundhara R/A</h2>
+    <div class="im" style="aspect-ratio:16/9;background:#EFE8DE;border:1px solid var(--hair)"><div class="fb" style="background:#EFE8DE;align-items:center;justify-content:center;flex-direction:column;gap:14px"><span style="width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 10px rgba(244,130,32,.2)"></span><span>Map · Road-18/A, Block-M, Bashundhara R/A</span></div></div>
+    <ul class="nb" id="dkNear" style="margin-top:28px"></ul>
+    <p class="small" style="margin-top:12px">Distances are demo values.</p>
+   </section>
+   <section id="progress" aria-labelledby="prH">
+    <p class="sl"><b>F</b> Construction progress</p><h2 class="h2" id="prH" style="margin-bottom:36px">On site</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:40px;align-items:center;margin-bottom:48px">
+     <svg class="ring" viewBox="0 0 180 180" role="img" aria-label="45% built (demo value)"><circle cx="90" cy="90" r="80" stroke="var(--hair)"/><circle id="ringArc" cx="90" cy="90" r="80" stroke="var(--accent)" stroke-dasharray="502.65" stroke-dashoffset="276.46" transform="rotate(-90 90 90)" stroke-linecap="butt"/><text x="90" y="100" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-size="46" fill="#0D0D0D">45%</text></svg>
+     <div><p class="h3">Structure in progress</p><p class="small">Last updated October 2026 · demo value</p></div>
+    </div>
+    <ol class="steps" style="--n:5" id="dkMs"></ol>
+    <div class="strip" id="dkStrip" style="margin-top:48px" data-lenis-prevent></div>
+   </section>
+   <section id="payment" aria-labelledby="pyH">
+    <p class="sl"><b>G</b> Payment plan</p><h2 class="h2" id="pyH" style="margin-bottom:36px">Payment plan</h2>
+    <ol class="steps" style="--n:4" id="dkPay"></ol>
+   </section>
+   <section id="enquire" aria-labelledby="enH">
+    <p class="sl"><b>H</b> Enquire</p><h2 class="h2" id="enH" style="margin-bottom:32px">Interested in Dokhinayon?</h2>
+    <form class="form" id="dkForm" novalidate>
+     <div class="fgrid">
+      <label class="fld">Full name<input class="inp" name="name" required autocomplete="name"></label>
+      <label class="fld">Phone<input class="inp" name="phone" type="tel" required autocomplete="tel" placeholder="+880"></label>
+      <label class="fld">Email<input class="inp" name="email" type="email" autocomplete="email"></label>
+      <label class="fld">Budget<select class="inp" name="budget"><option>Select</option><option>Under BDT 2 crore</option><option>BDT 2 – 3 crore</option><option>BDT 3 – 4 crore</option><option>Above BDT 4 crore</option></select></label>
+      <label class="fld">Unit size<select class="inp" name="unit" id="dkUnitSel"><option>approx. 2,030 sq ft — Unit A</option><option>approx. 2,030 sq ft — Unit B</option><option>Not sure yet</option></select></label>
+      <label class="fld">Timeframe<select class="inp" name="time"><option>Within 3 months</option><option>3 – 6 months</option><option>6 – 12 months</option><option>Just exploring</option></select></label>
+     </div>
+     <label class="chk"><input type="checkbox" data-nrb>I live abroad (NRB)</label>
+     <div class="fgrid" data-nrbf hidden><label class="fld">Country<input class="inp" name="country" autocomplete="country-name"></label><label class="fld">Best time to call (your time)<select class="inp" name="calltime"><option>Morning</option><option>Afternoon</option><option>Evening</option></select></label></div>
+     <button class="btn btn-o" type="submit" style="align-self:flex-start">Send enquiry</button>
+    </form>
+   </section>
+   <section aria-labelledby="simH" style="border-bottom:0">
+    <div class="head"><h2 class="h2" id="simH">More in Bashundhara R/A</h2><a class="lnk" href="#/projects" data-filter='{"area":"Bashundhara R/A"}'>All projects <svg class="arw" width="20" height="10"><use href="#i-ar"/></svg></a></div>
+    <ul class="cards" id="dkSim"></ul>
+   </section>
+  </div>
+  <aside class="scard" aria-label="Enquire about Dokhinayon">
+   <p class="label">Interested in</p>
+   <p class="h3" style="margin-bottom:8px">Dokhinayon?</p>
+   <a class="btn btn-o" href="tel:16677">Call 16677</a>
+   <a class="btn btn-line" href="https://wa.me/" data-wa>WhatsApp</a>
+   <button type="button" class="btn btn-line" data-enq="visit" data-project="Dokhinayon">Book a visit</button>
+   <button type="button" class="btn btn-line" data-brochure>Download brochure</button>
+   <p class="small" style="margin-top:8px">approx. 2,030 sq ft · 16 homes · Price on request</p>
+  </aside>
+ </div>
+ <div class="pbar"><a class="btn btn-o" href="tel:16677">Call</a><a class="btn btn-line" href="https://wa.me/" data-wa style="color:var(--ivory)">WhatsApp</a><button type="button" class="btn btn-line" data-enq="visit" data-project="Dokhinayon" style="color:var(--ivory)">Visit</button><button type="button" class="btn btn-line" data-brochure style="color:var(--ivory)">Brochure</button></div>
+</main>
+
+<!-- ================= ABOUT ================= -->
+<main class="route" data-route="about">
+ <section class="page-hero" aria-labelledby="abH">
+  <div class="im" data-img="tl:1996" data-alt="Rangs Properties, 1996" data-parallax data-eager data-w="1920" data-h="1080"></div><div class="shade"></div>
+  <div class="in wrap"><p class="label" style="color:#E2DBD1;margin-bottom:20px">About · A RANCON company</p><h1 class="h1" id="abH" data-lines>Creating Lifestyles<br>since 1996</h1></div>
+ </section>
+ <section class="sec" aria-labelledby="ab1"><div class="wrap">
+  <p class="sl"><b>01</b> Our story</p><h2 class="sr-only" id="ab1">Our story</h2>
+  <p class="intro-p" data-words>Rangs Properties began in 1996. Our first project, Rangabi Residential in Uttara, followed in 1999. In our thirtieth year we have landmarks across Dhaka, twenty projects under construction and thirteen more on the way.</p>
+ </div></section>
+ <section class="sec dark" aria-labelledby="ab2"><div class="wrap">
+  <p class="sl"><b>02</b> 1996 — 2026</p><h2 class="h2" id="ab2" data-lines style="margin-bottom:48px">Thirty years</h2>
+  <ol class="cards" id="aboutTl" style="grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr))"></ol>
+ </div></section>
+ <section class="sec" aria-labelledby="ab3"><div class="wrap">
+  <p class="sl"><b>03</b> Philosophy</p><h2 class="h2" id="ab3" data-lines style="margin-bottom:48px">R-A-N-G-S</h2>
+  <div class="cards" id="aboutRangs" style="grid-template-columns:repeat(auto-fill,minmax(min(220px,100%),1fr))"></div>
+ </div></section>
+ <section class="sec sand" aria-labelledby="ab4"><div class="wrap">
+  <p class="sl"><b>04</b> Core beliefs</p><h2 class="h2" id="ab4" data-lines style="margin-bottom:48px">Five things we<br>never compromise</h2>
+  <div class="rec" style="grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr))" id="beliefs"></div>
+ </div></section>
+ <section class="sec" aria-labelledby="ab5"><div class="wrap">
+  <p class="sl"><b>05</b> Recognition</p><h2 class="h2" id="ab5" data-lines style="margin-bottom:48px">Recognition</h2>
+  <div class="rec">
+   <div><span class="yr">Year TBC</span><p class="h3">First real estate company in Bangladesh to join the UN Global Compact</p></div>
+   <div><span class="yr">Year TBC</span><p class="h3">Honourable Mention for “Green Fencing” — Best Innovation, SDG Inclusion</p></div>
+   <div><span class="yr">Every building</span><p class="h3">Built to the Bangladesh National Building Code (BNBC)</p></div>
+  </div>
+ </div></section>
+ <section class="sec dark" aria-labelledby="ab6"><div class="wrap biz">
+  <div><p class="sl"><b>06</b> Our group</p><h2 class="h2" id="ab6" data-lines>A RANCON company</h2><p class="lede" style="margin-top:24px">[Short description of the RANCON group — to be supplied by Rangs.]</p></div>
+  <div class="im" style="aspect-ratio:16/10"><div class="fb"><span>RANCON group</span></div></div>
+ </div></section>
+ <section class="sec" aria-labelledby="ab7"><div class="wrap">
+  <p class="sl"><b>07</b> Leadership</p><h2 class="h2" id="ab7" data-lines style="margin-bottom:48px">The people behind Rangs</h2>
+  <ul class="cards" id="leaders" style="grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr))"></ul>
+ </div></section>
+ <section class="sec sand" id="stories" aria-labelledby="ab8"><div class="wrap">
+  <p class="sl"><b>08</b> Stories &amp; press</p><h2 class="h2" id="ab8" data-lines style="margin-bottom:48px">News from our sites</h2>
+  <div class="cards" data-stories></div>
+ </div></section>
+</main>
+
+<!-- ================= LANDOWNERS ================= -->
+<main class="route" data-route="landowners">
+ <section class="page-hero" aria-labelledby="loH1">
+  <div class="im" data-img="slide:3" data-alt="" data-parallax data-eager data-w="1920" data-h="1080"></div><div class="shade"></div>
+  <div class="in wrap"><p class="label" style="color:#E2DBD1;margin-bottom:20px">For landowners</p><h1 class="h1" id="loH1" data-lines>Have land?<br>Build with Rangs.</h1>
+   <div class="btns" style="margin-top:32px"><button type="button" class="btn btn-o" data-goto="landform">Submit your land</button><a class="btn btn-line" href="tel:16677">Call 16677</a></div></div>
+ </section>
+ <section class="sec" aria-labelledby="lo1"><div class="wrap">
+  <p class="sl"><b>01</b> Why Rangs</p><h2 class="h2" id="lo1" data-lines style="margin-bottom:48px">Your land,<br>in safe hands</h2>
+  <div class="rec" style="grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))">
+   <div><span class="display" style="font-size:72px;line-height:.9">30</span><p class="h3" style="font-size:26px">Years building in Dhaka</p><p class="small">From Rangabi Residential in 1999 to the projects rising today.</p></div>
+   <div><span class="display" style="font-size:72px;line-height:.9">18</span><p class="h3" style="font-size:26px">Areas across the city</p><p class="small">We know Dhaka, street by street.</p></div>
+   <div><span class="display" style="font-size:72px;line-height:.9">BNBC</span><p class="h3" style="font-size:26px">Built to code</p><p class="small">In-house engineering on every site.</p></div>
+   <div><span class="display" style="font-size:72px;line-height:.9">UNGC</span><p class="h3" style="font-size:26px">Responsible builder</p><p class="small">First real estate company in Bangladesh to join the UN Global Compact.</p></div>
+  </div>
+ </div></section>
+ <section class="sec dark" aria-labelledby="lo2"><div class="wrap">
+  <p class="sl"><b>02</b> Joint venture</p><h2 class="h2" id="lo2" data-lines style="margin-bottom:48px">Five steps from<br>plot to handover</h2>
+  <ol class="steps" style="--n:5" id="jv"></ol>
+  <div class="btns" style="margin-top:36px" id="jvNav"><button type="button" class="btn btn-line btn-s" data-jv="-1" aria-label="Previous step"><svg width="14" height="14"><use href="#i-l"/></svg></button><button type="button" class="btn btn-line btn-s" data-jv="1" aria-label="Next step"><svg width="14" height="14"><use href="#i-r"/></svg></button></div>
+ </div></section>
+ <section class="sec" id="landform" aria-labelledby="lo3"><div class="wrap biz" style="align-items:start">
+  <div><p class="sl"><b>03</b> Submit your land</p><h2 class="h2" id="lo3" data-lines>Tell us about<br>your plot</h2><p class="lede" style="margin-top:24px">Our land team reviews every submission and calls you to plan a site visit.</p></div>
+  <form class="form" id="landForm" novalidate>
+   <div class="fgrid">
+    <label class="fld">Area<select class="inp" name="area" data-areas required><option value="">Select area</option></select></label>
+    <label class="fld">Land size (katha)<input class="inp" name="katha" type="number" min="1" step="0.5" inputmode="decimal" required></label>
+    <label class="fld">Road width (feet)<input class="inp" name="road" type="number" min="1" inputmode="numeric" required></label>
+   </div>
+   <label class="fld">Plot address<input class="inp" name="addr" autocomplete="street-address"></label>
+   <div class="fgrid">
+    <label class="fld">Full name<input class="inp" name="name" required autocomplete="name"></label>
+    <label class="fld">Phone<input class="inp" name="phone" type="tel" required autocomplete="tel" placeholder="+880"></label>
+    <label class="fld">Email<input class="inp" name="email" type="email" autocomplete="email"></label>
+   </div>
+   <button class="btn btn-o" type="submit" style="align-self:flex-start">Submit land</button>
+  </form>
+ </div></section>
+</main>
+
+<!-- ================= CONTACT ================= -->
+<main class="route" data-route="contact">
+ <section class="page-hero" style="min-height:60vh" aria-labelledby="ctH">
+  <div class="im" data-img="slide:4" data-alt="" data-parallax data-eager data-w="1920" data-h="1080"></div><div class="shade"></div>
+  <div class="in wrap"><p class="label" style="color:#E2DBD1;margin-bottom:20px">Contact</p><h1 class="h1" id="ctH" data-lines>Every home starts<br>with a conversation.</h1></div>
+ </section>
+ <section class="sec" aria-label="Ways to reach us"><div class="wrap">
+  <div class="rec" style="grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))">
+   <div><span class="yr">Hotline</span><a class="display" href="tel:16677" style="font-size:72px;line-height:.9;text-decoration:none;color:var(--accent-d)">16677</a></div>
+   <div><span class="yr">WhatsApp</span><a class="h3" href="https://wa.me/" data-wa style="text-decoration:none">Message us</a><span class="small">Number TBC</span></div>
+   <div><span class="yr">Head office</span><address class="h3" style="font-style:normal;font-size:24px">Rangs Babylonia<br>246 Bir Uttam Mir Shawkat Road, Tejgaon I/A, Dhaka-1208</address></div>
+   <div><span class="yr">Hours · Email</span><p class="h3" style="font-size:24px">TBC</p></div>
+  </div>
+  <div style="margin-top:72px" class="mapgrid">
+   <div data-map="contact"></div>
+   <div><p class="sl"><b>HQ</b> Find us</p><p class="h3">Rangs Babylonia sits in Tejgaon Industrial Area, between Gulshan and Mohakhali.</p><p class="small" style="margin-top:12px">Stylised map. Live map embed to be added.</p><a class="btn btn-line" style="margin-top:28px" href="https://maps.google.com/?q=Rangs+Babylonia+Tejgaon+Dhaka" target="_blank" rel="noopener">Open in Google Maps</a></div>
+  </div>
+ </div></section>
+ <section class="sec sand" aria-label="Forms"><div class="wrap biz" style="align-items:start">
+  <form class="form" id="msgForm" novalidate>
+   <h2 class="h2">Send a message</h2>
+   <label class="fld">I'm contacting you about<select class="inp" name="purpose"><option>Buy a home</option><option>Commercial space</option><option>Landowner</option><option>Career</option><option>Other</option></select></label>
+   <div class="fgrid"><label class="fld">Full name<input class="inp" name="name" required autocomplete="name"></label><label class="fld">Phone<input class="inp" type="tel" name="phone" required autocomplete="tel" placeholder="+880"></label></div>
+   <label class="fld">Email<input class="inp" type="email" name="email" autocomplete="email"></label>
+   <label class="fld">Message<textarea class="inp" name="msg"></textarea></label>
+   <button class="btn btn-o" type="submit" style="align-self:flex-start">Send message</button>
+  </form>
+  <form class="form" id="visitForm" novalidate>
+   <h2 class="h2">Book a site visit</h2>
+   <label class="fld">Project<select class="inp" name="project" data-projsel></select></label>
+   <div class="fgrid"><label class="fld">Date<input class="inp" type="date" name="date" required></label><label class="fld">Time<select class="inp" name="time"><option>10:00 am</option><option>12:00 pm</option><option>3:00 pm</option><option>5:00 pm</option></select></label></div>
+   <div class="fgrid"><label class="fld">Full name<input class="inp" name="name" required autocomplete="name"></label><label class="fld">Phone<input class="inp" type="tel" name="phone" required autocomplete="tel" placeholder="+880"></label></div>
+   <button class="btn btn-n" type="submit" style="align-self:flex-start">Book a site visit</button>
+  </form>
+ </div></section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot">
+ <div class="wrap">
+  <div class="top">
+   <div><a class="logo" href="#/" aria-label="Rangs Properties, home" style="color:var(--ivory)"><img class="lw" data-src="logoWhite" alt="Rangs Properties" width="150" height="40" style="display:block"><span class="lt" aria-hidden="true"><b>RANGS</b><small>PROPERTIES</small></span></a>
+    <p class="display it" style="font-size:24px;margin:20px 0 4px">Creating Lifestyles since 1996</p><p class="small">A RANCON company</p></div>
+   <nav aria-label="Footer"><span class="k">Explore</span><a href="#/projects">Projects</a><a href="#/about">About</a><a href="#/landowners">Landowners</a><a href="#/about/stories">Stories</a><a href="#/contact">Contact</a></nav>
+   <nav aria-label="Projects"><span class="k">Projects</span><a href="#/project/dokhinayon">Dokhinayon</a><a href="#/projects" data-filter='{"status":"ongoing"}'>Ongoing</a><a href="#/projects" data-filter='{"status":"upcoming"}'>Upcoming</a><a href="#/projects" data-filter='{"status":"completed"}'>Completed</a></nav>
+   <nav aria-label="Social"><span class="k">Follow</span><a href="https://www.facebook.com/" data-tbc="Facebook link">Facebook</a><a href="https://www.instagram.com/" data-tbc="Instagram link">Instagram</a><a href="https://www.youtube.com/" data-tbc="YouTube link">YouTube</a><a href="https://www.linkedin.com/" data-tbc="LinkedIn link">LinkedIn</a></nav>
+   <div><span class="k">Be first to hear about new launches</span>
+    <form class="nl" id="nlForm" novalidate><label class="sr-only" for="nlIn">Email or phone</label><input id="nlIn" name="contact" placeholder="Email or phone" required autocomplete="email"><button type="submit">Subscribe</button></form>
+    <address style="font-style:normal;margin-top:28px;font-size:14px;color:#CFC8BE;line-height:1.7">Rangs Babylonia, 246 Bir Uttam Mir Shawkat Road,<br>Tejgaon I/A, Dhaka-1208</address>
+    <a href="tel:16677" style="display:inline-block;margin-top:10px;font-family:var(--serif);font-size:30px;color:var(--accent)">Hotline 16677</a></div>
+  </div>
+  <div class="bot"><span>© 2026 Rangs Properties Ltd. · A RANCON company</span><span>Demo prepared by Brain Station 23</span></div>
+ </div>
+</footer>
+
+<nav class="mbar" aria-label="Quick actions">
+ <a href="#/" data-mb="home"><svg width="20" height="20"><use href="#i-home"/></svg>Home</a>
+ <a href="#/projects" data-mb="projects"><svg width="20" height="20"><use href="#i-grid"/></svg>Projects</a>
+ <a href="#/projects" data-mb="map" data-map-link><svg width="20" height="20"><use href="#i-pin"/></svg>Map</a>
+ <a href="tel:16677" class="o"><svg width="20" height="20" viewBox="0 0 16 16"><use href="#i-ph"/></svg>Call</a>
+ <button type="button" data-enq><svg width="20" height="20"><use href="#i-chat"/></svg>Enquire</button>
+</nav>
+
+<!-- Enquire drawer -->
+<dialog class="drawer" id="drawer" aria-labelledby="drH" data-lenis-prevent>
+ <div class="in">
+  <button type="button" class="x" data-close aria-label="Close"><svg width="16" height="16"><use href="#i-x"/></svg></button>
+  <p class="label" id="drKicker">Enquire</p>
+  <h2 class="h2" id="drH" style="font-size:52px">Let's talk.</h2>
+  <form class="form" id="drForm" novalidate>
+   <label class="fld">Project<select class="inp" name="project" data-projsel></select></label>
+   <label class="fld">I'd like to<select class="inp" name="purpose" id="drPurpose"><option value="visit">Book a site visit</option><option value="info">Get price and details</option><option value="launch">Register interest in a launch</option><option value="nrb">Talk to an NRB advisor</option><option value="land">Discuss my land</option></select></label>
+   <div class="fgrid"><label class="fld">Full name<input class="inp" name="name" required autocomplete="name"></label><label class="fld">Phone<input class="inp" name="phone" type="tel" required autocomplete="tel" placeholder="+880"></label></div>
+   <label class="fld">Email<input class="inp" name="email" type="email" autocomplete="email"></label>
+   <div class="fgrid" id="drVisit"><label class="fld">Preferred date<input class="inp" type="date" name="date"></label><label class="fld">Time<select class="inp" name="time"><option>10:00 am</option><option>12:00 pm</option><option>3:00 pm</option><option>5:00 pm</option></select></label></div>
+   <label class="chk"><input type="checkbox" data-nrb>I live abroad (NRB)</label>
+   <div class="fgrid" data-nrbf hidden><label class="fld">Country<input class="inp" name="country" autocomplete="country-name"></label><label class="fld">Best time to call<select class="inp" name="calltime"><option>Morning</option><option>Afternoon</option><option>Evening</option></select></label></div>
+   <label class="chk"><input type="checkbox" name="wa" checked>Reply on WhatsApp</label>
+   <label class="fld">Message (optional)<textarea class="inp" name="msg"></textarea></label>
+   <button class="btn btn-o" type="submit" style="align-self:flex-start">Send</button>
+  </form>
+  <div class="thanks" id="drThanks" hidden><b>Thank you.</b>A Rangs advisor will call you within one working day. For anything urgent, call 16677.</div>
+ </div>
+</dialog>
+
+<dialog class="lb" id="lb" aria-label="Gallery">
+ <button type="button" class="x" data-close aria-label="Close gallery"><svg width="16" height="16"><use href="#i-x"/></svg></button>
+ <div class="stage" id="lbStage"></div>
+ <div class="ctl"><button type="button" data-lb="-1" aria-label="Previous image"><svg width="16" height="16"><use href="#i-l"/></svg></button><span id="lbPos" aria-live="polite">1 / 8</span><button type="button" data-lb="1" aria-label="Next image"><svg width="16" height="16"><use href="#i-r"/></svg></button></div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+/* =====================================================================
+   EDITABLE CONTENT — text, numbers and image paths live here.
+   Unknown numbers stay "TBC". See the DEMO DATA comment at the top.
+   ===================================================================== */
+const CONTACT = {
+  hotline: '16677',
+  whatsapp: '',      // TBC — e.g. '8801XXXXXXXXX'. Empty = WhatsApp buttons show a "TBC" note.
+  hq: 'Rangs Babylonia, 246 Bir Uttam Mir Shawkat Road, Tejgaon I/A, Dhaka-1208'
+};
+
+const STATS = [
+  { value: 30, suffix: '', label: 'Years in Dhaka' },
+  { value: 18, suffix: '', label: 'Areas across the city' },
+  { value: 'TBC', label: 'Projects delivered' },
+  { value: 'TBC', label: 'Million sq ft built' },
+  { value: 'TBC', label: 'Families at home' }
+];
+
+// approximate lat, lng — north is up on the map
+const AREAS = {
+  'Uttara': [23.874, 90.398], 'Diabari': [23.876, 90.369], 'Mirpur': [23.807, 90.368], 'Bashundhara R/A': [23.819, 90.436],
+  'Baridhara': [23.800, 90.421], 'Gulshan': [23.781, 90.416], 'Gulshan 2': [23.794, 90.414], 'Banani': [23.794, 90.404],
+  'Banani DOHS': [23.797, 90.393], 'Mohakhali DOHS': [23.784, 90.391], 'Mohakhali': [23.778, 90.400], 'Shahjadpur': [23.791, 90.426],
+  'Badda': [23.780, 90.427], 'Tejgaon': [23.764, 90.397], 'Asad Gate': [23.762, 90.374], 'Lalmatia': [23.757, 90.368],
+  'Dhanmondi': [23.746, 90.374], 'Lalbagh': [23.719, 90.388]
+};
+const TBC_ANCHOR = [23.7875, 90.406]; // pins for projects without an area: near Gulshan–Banani (ASSUMED)
+
+function P(name, status, area, o) {
+  return Object.assign({
+    name, status, area: area || null, areaLabel: area || 'Area TBC',
+    slug: name.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
+    type: 'Residential', typeAssumed: true, sold: false, progress: null, year: null, size: null, note: ''
+  }, o || {});
+}
+const RES = { type: 'Residential', typeAssumed: false }, COM = { type: 'Commercial', typeAssumed: false };
+const PROJECTS = [
+  // Ongoing (20) — progress % = DEMO
+  P('Dokhinayon', 'ongoing', 'Bashundhara R/A', { ...RES, progress: 45, size: 2030, page: '#/project/dokhinayon' }),
+  P('Sayera Place', 'ongoing', 'Banani', { progress: 60 }),
+  P('Saruala', 'ongoing', 'Dhanmondi', { sold: true, progress: 80 }),
+  P('Mayank', 'ongoing', 'Bashundhara R/A', { progress: 35 }),
+  P('The Sanctuary', 'ongoing', 'Banani', { progress: 50 }),
+  P('The Majestic', 'ongoing', 'Dhanmondi', { progress: 25 }),
+  P('White Lake', 'ongoing', 'Shahjadpur', { progress: 40 }),
+  P('Bashira Heights', 'ongoing', 'Gulshan', { sold: true, progress: 85 }),
+  P('Kuheli', 'ongoing', 'Banani', { sold: true, progress: 75 }),
+  P('RK Square', 'ongoing', 'Gulshan', { progress: 30 }),
+  P('Noorani Heights', 'ongoing', 'Banani DOHS', { progress: 55 }),
+  P('Ixora', 'ongoing', 'Bashundhara R/A', { progress: 20 }),
+  P('Torukabbo', 'ongoing', 'Mirpur', { progress: 45 }),
+  P('Tree House', 'ongoing', 'Uttara', { sold: true, progress: 70 }),
+  P('A & F Square', 'ongoing', 'Dhanmondi', { ...COM, progress: 65, year: 2025 }),
+  P('Torukunjo', 'ongoing', 'Asad Gate', { sold: true, progress: 90 }),
+  P('Sunset Square', 'ongoing', 'Uttara', { sold: true, progress: 80 }),
+  P('T Cube', 'ongoing', 'Lalmatia', { progress: 15 }),
+  P('AK Square', 'ongoing', 'Dhanmondi', { progress: 35 }),
+  P('Rancon One', 'ongoing', 'Uttara', { sold: true, progress: 85 }),
+  // Upcoming (13)
+  P('Vantage 27', 'upcoming', 'Dhanmondi'),
+  P('Belasheshe', 'upcoming', 'Dhanmondi'),
+  P('Terminal D', 'upcoming', 'Diabari', { ...COM, year: 2026, areaLabel: 'Diabari, Uttara' }),
+  P('The Heritage', 'upcoming', 'Lalbagh'),
+  P('Cloud & Creek', 'upcoming', 'Bashundhara R/A'),
+  P('Terminal S', 'upcoming', 'Mirpur'),
+  P('Beaumont 53', 'upcoming', 'Banani'),
+  P('The ION', 'upcoming', 'Uttara'),
+  P('Shireenz', 'upcoming', 'Banani'),
+  P('Nahrira', 'upcoming', 'Gulshan'),
+  P('Monarch', 'upcoming', 'Gulshan'),
+  P('Haque Heights', 'upcoming', 'Banani'),
+  P('SamaHa Park Panorama', 'upcoming', 'Mohakhali'),
+  // Completed (19)
+  P('Rangabi Residential', 'completed', 'Uttara', { ...RES, year: 1999, note: 'Our first project' }),
+  P('Rangs Korobi', 'completed', 'Banani', { year: 2002 }),
+  P('Rangs Anam Plaza', 'completed', 'Dhanmondi', { ...COM, year: 2004 }),
+  P('Rangs Waterfront', 'completed', null, { ...RES, year: 2006, note: 'Our largest built area' }),
+  P('Rangs Panorama', 'completed', null, { year: 2007 }),
+  P('Garden Palace', 'completed', null, { year: 2007 }),
+  P('Chayabithi', 'completed', null, { year: 2007 }),
+  P('Taj Tower', 'completed', null, { year: 2007 }),
+  P('Rangs KB Square', 'completed', 'Dhanmondi', { ...COM, year: 2010 }),
+  P('Rangs Nasim Square', 'completed', 'Dhanmondi', { ...COM, year: 2013, areaLabel: 'Dhanmondi 27' }),
+  P('Ulania House', 'completed', null, { year: 2016 }),
+  P('Khan Palace', 'completed', null, { year: 2016 }),
+  P('Marc Residence', 'completed', 'Gulshan 2', { ...RES, year: 2017, areaLabel: 'North Gulshan' }),
+  P('Rangs FC Square', 'completed', 'Gulshan', { ...COM, year: 2018, areaLabel: 'Gulshan Avenue' }),
+  P('Rangs RD Square', 'completed', 'Gulshan', { year: 2019 }),
+  P('Eminence', 'completed', null, { ...COM, year: 2020 }),
+  P('Diorama', 'completed', 'Gulshan', { ...RES, year: 2023 }),
+  P('Z-Square', 'completed', 'Gulshan', { ...COM, year: 2024, note: 'Designed on the golden ratio' }),
+  P('Rangs Babylonia', 'completed', 'Tejgaon', { ...COM, areaLabel: 'Tejgaon I/A', note: 'Our head office · year TBC' })
+];
+
+const TIMELINE = [
+  { y: 1996, t: 'The beginning.' },
+  { y: 1999, t: 'Rangabi Residential, Uttara — our first project.' },
+  { y: 2002, t: 'Rangs Korobi, Banani.' },
+  { y: 2004, t: 'Rangs Anam Plaza, Dhanmondi.' },
+  { y: 2006, t: 'Rangs Waterfront — our largest built area.' },
+  { y: 2007, t: 'Rangs Panorama, Garden Palace, Chayabithi and Taj Tower.' },
+  { y: 2010, t: 'Rangs KB Square, Dhanmondi.' },
+  { y: 2013, t: 'Rangs Nasim Square, Dhanmondi 27.' },
+  { y: 2016, t: 'Ulania House, Marc Residence and Khan Palace handed over.' },
+  { y: 2017, t: 'Marc Residences, North Gulshan.' },
+  { y: 2018, t: 'Rangs FC Square, Gulshan Avenue.' },
+  { y: 2019, t: 'Rangs RD Square, Gulshan.' },
+  { y: 2020, t: 'Eminence.' },
+  { y: 2023, t: 'Diorama, Gulshan.' },
+  { y: 2024, t: 'Z-Square, Gulshan — designed on the golden ratio.' },
+  { y: 2025, t: 'A & F Square.' },
+  { y: 2026, t: 'Terminal D. Our 30th year.' }
+];
+
+const RANGS = [
+  { l: 'R', w: 'Renaissance', t: 'Less, not more.' },
+  { l: 'A', w: 'Architecture', t: 'Design that thinks for you.' },
+  { l: 'N', w: 'Nurture', t: 'Green living in a dense city.' },
+  { l: 'G', w: 'Geometry', t: 'Precision and proportion.' },
+  { l: 'S', w: 'Signature', t: 'Lasting luxury and safety.' }
+];
+const BELIEFS = [ // short lines = draft copy
+  { h: 'Design', t: 'Plans that use every square foot well.' },
+  { h: 'Construction', t: 'Built to BNBC, checked by our own engineers.' },
+  { h: 'Safety', t: 'Safe sites, safe homes.' },
+  { h: 'Signature', t: 'A finish you can recognise as Rangs.' },
+  { h: 'Lifestyle', t: 'Shared spaces that make a building a community.' }
+];
+const BUILD = [ // draft copy
+  { h: 'BNBC-compliant structure', t: 'Every Rangs building is designed and built to the Bangladesh National Building Code.', img: 'tl:2024' },
+  { h: 'In-house engineering', t: 'Our own engineers plan, check and sign off each stage on site.', img: 'tl:2025' },
+  { h: 'Site safety', t: 'Clear safety rules on every site, for the people who build our homes.', img: 'tl:2026' },
+  { h: 'Quality materials', t: 'Materials are chosen and checked before they reach the site.', img: 'dk:2' },
+  { h: 'After-sales service', t: 'Our support continues long after you move in.', img: 'dk:4' }
+];
+const LAUNCHES = ['terminal-d', 'vantage-27', 'beaumont-53'];
+const LANDMARKS = [
+  { slug: 'rangs-waterfront', t: 'Our largest built area, completed in 2006.' },
+  { slug: 'rangs-nasim-square', t: 'A commercial address on Dhanmondi 27, completed in 2013.' },
+  { slug: 'rangs-fc-square', t: 'Commercial space on Gulshan Avenue, completed in 2018.' },
+  { slug: 'z-square', t: 'Designed on the golden ratio. Gulshan, 2024.' },
+  { slug: 'diorama', t: 'Residences in Gulshan, completed in 2023.' }
+];
+const BUSINESS = ['terminal-d', 'a-and-f-square', 'z-square', 'rangs-fc-square', 'rangs-nasim-square'];
+
+const DOKHINAYON = {
+  units: { 1: ['Sold', 'Sold'], 2: ['Sold', 'Booked'], 3: ['Booked', 'Available'], 4: ['Available', 'Sold'], // DEMO
+           5: ['Available', 'Available'], 6: ['Booked', 'Available'], 7: ['Available', 'Booked'], 8: ['Available', 'Available'] },
+  nearby: [ // DEMO distances
+    { n: 'Independent University, Bangladesh', k: 'University', d: '1.0 km' },
+    { n: 'North South University', k: 'University', d: '1.2 km' },
+    { n: 'Evercare Hospital Dhaka', k: 'Hospital', d: '1.5 km' },
+    { n: 'Jamuna Future Park', k: 'Shopping', d: '2.5 km' }
+  ],
+  milestones: [ // DEMO
+    { n: 'Piling', s: 'Done', c: 'done' }, { n: 'Foundation', s: 'Done', c: 'done' }, { n: 'Structure', s: 'In progress', c: 'now' },
+    { n: 'Finishing', s: 'Next', c: '' }, { n: 'Handover', s: 'TBC', c: '' }
+  ],
+  months: ['May 2026', 'Jun 2026', 'Jul 2026', 'Aug 2026', 'Sep 2026', 'Oct 2026'], // DEMO
+  payment: ['Booking', 'Down payment', 'Instalments', 'Handover'],
+  similar: ['mayank', 'ixora', 'cloud-and-creek']
+};
+
+// Client images and film (hot-linked from their current site)
+const IMAGES = {
+  base: 'https://rangsproperties.com',
+  logoWhite: '/uploads/images/rpl-white-mt5pqxtq-fa9ffae8.png',
+  logo: '/assets/images/dynamic/admin/settings_images/Untitled-1-1766058615-1779182161.svg',
+  heroVideo: '/assets/images/dynamic/admin/uploads/page/projects/1579684940oPlZ1.mp4',
+  heroSlides: ['1684326208nXl5n.jpg', '1684326267inCKU.jpg', '1579586522C5G80.jpg', '1579586673JZhtL.jpg', '15795872324FqEz.jpg'].map(f => '/assets/images/dynamic/admin/uploads/gallery/home-slider/' + f),
+  rangs: { R: 'renaissance/1551944636IGIE6.png', A: 'architecture/1566363266bwYXN.png', N: 'nature/1566363341kLqfR.png', G: 'geometry/1551945643Bpv58.png', S: 'signature/1551946892qOU6q.png' },
+  rangsBase: '/assets/images/dynamic/admin/uploads/page/',
+  timelineBase: '/assets/images/oldsiteuploads/page/timeline/',
+  timeline: { 2026: '1781601109ikB6d.jpg', 2025: '1781601146EytrU.jpg', 2024: '17466161548xzNc.jpg', 2023: '1746616087pRrw0.jpg', 2020: '17466158333zLvk.jpg', 2019: '1634101059Ec7bq.jpg', 2018: '1634101112CUW96.jpg', 2017: '1634099714ccF2H.jpg', 2016: '1553437986A9vTY.jpg', 2013: '1555318039gex0g.jpg', 2010: '1634099288UUJTM.jpg', 2007: '1634099392gS4xw.jpg', 2006: '15627594488dWwm.jpg', 2004: '1634101591kO2UF.jpg', 2002: '1634101743bKmsN.jpg', 1999: '1634102152QYbfO.jpg', 1996: '1634099508O1WCM.jpg' },
+  dokhinayon: ['bashundhara-m-block-close-1-1-muno0v4m-72e51b1a.webp', 'bashundhara-m-block-exono-view-muno0ygz-d8182cee.webp', 'bashundhara-m-block-front-close-muno10ne-0082d209.webp', 'left-side-view-1-muno12rw-e82f1bdc.webp', 'master-bedroom-05-01-muno1t9j-a69f2cd2.webp', '1-muno1adj-a8466148.webp', '2-muno1df7-37fe944e.webp', '3-muno1f6i-08edb3cb.webp'].map(f => '/uploads/images/' + f),
+  dokhinayonCaptions: ['Front, close view', 'Exterior view', 'Front entrance', 'Left side view', 'Master bedroom', 'Interior 1', 'Interior 2', 'Interior 3'],
+  // project card images: slug -> image key (timeline year or Dokhinayon render)
+  projects: { 'dokhinayon': ['dk:0', 'dk:1'], 'rangabi-residential': ['tl:1999'], 'rangs-korobi': ['tl:2002'], 'rangs-anam-plaza': ['tl:2004'], 'rangs-waterfront': ['tl:2006'], 'rangs-kb-square': ['tl:2010'], 'rangs-nasim-square': ['tl:2013'], 'marc-residence': ['tl:2017'], 'rangs-fc-square': ['tl:2018'], 'rangs-rd-square': ['tl:2019'], 'eminence': ['tl:2020'], 'diorama': ['tl:2023'], 'z-square': ['tl:2024'], 'a-and-f-square': ['tl:2025'], 'terminal-d': ['tl:2026'] }
+};
+
+/* =====================================================================
+   APP
+   ===================================================================== */
+(function () {
+  'use strict';
+  const $ = (s, r) => (r || document).querySelector(s), $$ = (s, r) => [...(r || document).querySelectorAll(s)];
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const by = Object.fromEntries(PROJECTS.map(p => [p.slug, p]));
+  const statusLabel = { ongoing: 'Ongoing', upcoming: 'Upcoming', completed: 'Completed' };
+  const ARW = '<svg class="arw" width="20" height="10" aria-hidden="true"><use href="#i-ar"/></svg>';
+
+  /* ---------- images ---------- */
+  const url = p => p ? (/^https?:/.test(p) ? p : IMAGES.base + p) : '';
+  function srcFor(key) {
+    if (!key) return '';
+    const [k, v] = key.split(':');
+    if (k === 'slide') return url(IMAGES.heroSlides[+v]);
+    if (k === 'tl') return IMAGES.timeline[v] ? url(IMAGES.timelineBase + IMAGES.timeline[v]) : '';
+    if (k === 'dk') return url(IMAGES.dokhinayon[+v]);
+    if (k === 'rangs') return url(IMAGES.rangsBase + IMAGES.rangs[v]);
+    if (k === 'p') return srcFor((IMAGES.projects[v] || [])[0]);
+    if (k === 'p2') return srcFor((IMAGES.projects[v] || [])[1]);
+    return url(key);
+  }
+  window.rpFb = function (img) {
+    if (img.classList.contains('alt')) { img.remove(); return; }
+    const d = document.createElement('div'); d.className = 'fb'; d.innerHTML = '<span>' + esc(img.dataset.name || img.alt || 'Rangs Properties') + '</span>';
+    img.replaceWith(d);
+  };
+  function img(key, name, w, h, o) {
+    o = o || {};
+    const s = srcFor(key);
+    if (!s) return `<div class="fb"><span>${esc(name)}</span></div>`;
+    return `<img src="${esc(s)}" alt="${esc(o.alt ?? name)}" data-name="${esc(name)}" width="${w}" height="${h}" ${o.eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" class="${o.cls || ''}" onerror="rpFb(this)">`;
+  }
+  const im = (key, name, w, h, cls, o) => `<div class="im ${cls || ''}">${img(key, name, w, h, o)}</div>`;
+  function hydrate(root) {
+    $$('.im[data-img]', root).forEach(el => { if (el.dataset.h2) return; el.dataset.h2 = 1; el.insertAdjacentHTML('afterbegin', img(el.dataset.img, el.dataset.alt || 'Rangs Properties', el.dataset.w || 1600, el.dataset.h || 1000, { alt: el.dataset.alt || '' })); });
+    $$('img[data-src]', root).forEach(i => { i.onerror = () => i.closest('.logo').classList.add('nologo'); i.src = url(IMAGES[i.dataset.src]); });
+  }
+
+  /* ---------- small UI helpers ---------- */
+  let toastT;
+  function toast(m) { const t = $('#toast'); t.textContent = m; t.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('on'), 3200); }
+  function lines(el) { // wrap each <br>-separated line for the rise-in
+    if (el.dataset.ld) return; el.dataset.ld = 1;
+    const parts = el.innerHTML.split(/<br\s*\/?>/i);
+    el.innerHTML = parts.map((h, i) => `<span class="ln"><span class="ln-in" style="--i:${i}">${h}</span></span>`).join('');
+  }
+  function words(el) {
+    if (el.dataset.wd) return; el.dataset.wd = 1;
+    el.innerHTML = el.textContent.trim().split(/\s+/).map(w => `<span class="w">${esc(w)}</span>`).join(' ');
+  }
+
+  /* ---------- cards ---------- */
+  function card(p, o) {
+    o = o || {};
+    const imgs = IMAGES.projects[p.slug] || [];
+    const second = imgs[1] ? img(imgs[1], p.name, 800, 1000, { cls: 'alt', alt: '' }) : '';
+    return `<li class="card">
+      <div class="tags"><span class="st st-${p.status}">${statusLabel[p.status]}</span>${p.sold ? '<span class="st st-sold">Sold out</span>' : ''}</div>
+      <div class="im rv" style="aspect-ratio:${o.ratio || '4/5'}">${img('p:' + p.slug, p.name, 800, 1000)}${second}</div>
+      <h3>${p.page ? `<a href="${p.page}">${esc(p.name)}</a>` : esc(p.name)}</h3>
+      <span class="m">${esc(p.areaLabel)} · ${p.type}${p.year ? ' · ' + p.year : ''}</span>
+      ${p.status === 'ongoing' ? `<div class="prog"><span>Construction</span><span class="bar"><i style="width:${p.progress}%"></i></span><b style="color:var(--night)">${p.progress}%</b></div>` : ''}
+      <div class="act">${p.page ? `<a class="lnk" href="${p.page}">View project ${ARW}</a>` : ''}<button type="button" class="lnk" data-enq="${p.status === 'upcoming' ? 'launch' : 'info'}" data-project="${esc(p.name)}">${p.status === 'upcoming' ? 'Register interest' : 'Enquire'}</button></div>
+    </li>`;
+  }
+
+  /* ---------- static renders ---------- */
+  function renderAll() {
+    // selects
+    const areaOpts = Object.keys(AREAS).sort().map(a => `<option>${a}</option>`).join('');
+    $$('select[data-areas]').forEach(s => { s.insertAdjacentHTML('beforeend', areaOpts + (s.id === 'fArea' ? '<option>Area TBC</option>' : '')); });
+    const projOpts = PROJECTS.filter(p => p.status !== 'completed' && !p.sold).map(p => `<option>${esc(p.name)} — ${esc(p.areaLabel)}</option>`).join('') + '<option>Not sure yet</option>';
+    $$('[data-projsel]').forEach(s => s.innerHTML = projOpts);
+
+    // mega menu
+    const cnt = st => PROJECTS.filter(p => p.status === st).length;
+    $('#mmStatus').innerHTML = ['ongoing', 'upcoming', 'completed'].map(s => `<a href="#/projects" data-filter='{"status":"${s}"}'>${statusLabel[s]} <small>${cnt(s)}</small></a>`).join('');
+    $('#mmAreas').innerHTML = Object.keys(AREAS).sort().map(a => `<a href="#/projects" data-filter='{"area":"${a}"}'>${a} <small>${PROJECTS.filter(p => p.area === a).length || ''}</small></a>`).join('');
+
+    // stats
+    $('#stats').innerHTML = STATS.map(s => `<div><b ${typeof s.value === 'number' ? `data-count="${s.value}"` : ''}>${s.value}</b><span>${s.label}</span></div>`).join('');
+
+    // launches
+    $('#launches').innerHTML = LAUNCHES.map((sl, i) => { const p = by[sl]; return `
+      <article class="launch">
+        ${im('p:' + sl, p.name, 1400, 875, 'rv')}
+        <div class="tx">
+          <p class="n"><b>0${i + 1}</b> / 03</p>
+          <h3 class="h2" style="font-size:clamp(44px,4.6vw,76px)">${esc(p.name)}</h3>
+          <dl><dt>Area</dt><dd>${esc(p.areaLabel)}</dd><dt>Type</dt><dd>${p.type}</dd><dt>Price</dt><dd>Price on request</dd><dt>Status</dt><dd>Launching soon</dd></dl>
+          <div class="btns"><button type="button" class="btn btn-o" data-enq="launch" data-project="${esc(p.name)}">Register interest</button></div>
+        </div>
+      </article>`; }).join('');
+
+    // marquee
+    const names = Object.keys(AREAS).map(a => `<span>${a}</span>`).join('');
+    $('#marq').innerHTML = names + names;
+
+    // landmarks
+    $('#lmTrack').innerHTML = LANDMARKS.map((l, i) => { const p = by[l.slug]; return `
+      <article class="lm-item">
+        ${im('p:' + l.slug, p.name, 1600, 900, 'rv')}
+        <div class="row"><span class="n">0${i + 1} / 05</span><div><h3 class="h2">${esc(p.name)}</h3><p class="lede" style="margin-top:10px">${esc(l.t)}</p></div></div>
+      </article>`; }).join('');
+
+    // timeline strip
+    $('#tlStrip').innerHTML = TIMELINE.map(e => `<li>${im('tl:' + e.y, String(e.y), 680, 850, 'rv')}<span class="y">${e.y}</span><p>${esc(e.t)}</p></li>`).join('')
+      + `<li><div class="im"><div class="fb"><span>Rangs Babylonia</span></div></div><span class="y" style="font-size:48px">Year TBC</span><p>Rangs Babylonia, Tejgaon — our head office.</p></li>`;
+
+    // R-A-N-G-S
+    $('#rgL').innerHTML = RANGS.map((r, i) => `<span data-l="${i}" class="${i ? '' : 'on'}">${r.l}</span>`).join('');
+    $('#rgP').innerHTML = RANGS.map((r, i) => `
+      <div class="rg-p" data-rg="${i}">
+        ${im('rangs:' + r.l, r.w, 800, 800, 'rv')}
+        <div><p class="label" style="margin-bottom:16px">${r.l} — 0${i + 1} / 05</p><h3 class="h2">${r.w}</h3><p>${r.t}</p></div>
+      </div>`).join('');
+
+    // business
+    $('#bizList').innerHTML = BUSINESS.map((s, i) => { const p = by[s]; return `<li><button type="button" data-biz="${s}" class="${i ? '' : 'on'}"><span class="n">0${i + 1}</span><span class="nm">${esc(p.name)}</span><small>${esc(p.areaLabel)} · ${p.status === 'completed' ? p.year || 'Completed' : p.status === 'ongoing' ? 'Under construction' : 'Launching'}</small></button></li>`; }).join('');
+    setBiz(BUSINESS[0]);
+
+    // stacking cards
+    $('#stack').innerHTML = BUILD.map((b, i) => `
+      <article class="sc" style="--i:${i}">
+        <div class="tx"><span class="n">0${i + 1}</span><div><h3 class="h3">${b.h}</h3><p class="lede" style="margin-top:14px">${b.t}</p></div></div>
+        ${im(b.img, b.h, 1200, 900)}
+      </article>`).join('');
+
+    // stories (home + about)
+    $$('[data-stories]').forEach(el => el.innerHTML = ['Story', 'Press', 'Behind the build'].map(k => `
+      <article class="card"><div class="im" style="aspect-ratio:3/2"><div class="fb"><span>${k}</span></div></div><p class="label">${k} · Date TBC</p><h3>[Story headline to come]</h3></article>`).join(''));
+
+    // about
+    $('#aboutTl').innerHTML = TIMELINE.map(e => `<li class="card">${im('tl:' + e.y, String(e.y), 600, 750, 'rv')}<span class="display" style="font-size:64px;line-height:.85;color:var(--accent)">${e.y}</span><p class="small" style="color:#CFC8BE;margin:0">${esc(e.t)}</p></li>`).join('');
+    $('#aboutRangs').innerHTML = RANGS.map(r => `<article class="card">${im('rangs:' + r.l, r.w, 600, 600, 'rv', {})}<span class="display" style="font-size:96px;line-height:.8">${r.l}</span><h3>${r.w}</h3><p class="small" style="margin:0">${r.t}</p></article>`).join('');
+    $('#beliefs').innerHTML = BELIEFS.map((b, i) => `<div><span class="yr">0${i + 1}</span><p class="h3">${b.h}</p><p class="small">${b.t}</p></div>`).join('');
+    $('#leaders').innerHTML = [1, 2, 3, 4].map(() => `<li class="card"><div class="im" style="aspect-ratio:4/5"><div class="fb"><span>Portrait</span></div></div><h3 style="font-size:26px">[Name]</h3><span class="m">[Title]</span></li>`).join('');
+
+    // Dokhinayon
+    $('#dkGal').innerHTML = IMAGES.dokhinayon.map((_, i) => `<button type="button" data-gal="${i}" aria-label="Open image ${i + 1}: ${IMAGES.dokhinayonCaptions[i]}"><div class="im" style="aspect-ratio:${['4/3', '3/4', '1/1', '4/3', '3/4', '4/3', '1/1', '3/4'][i]}">${img('dk:' + i, 'Dokhinayon · ' + IMAGES.dokhinayonCaptions[i], 1200, 900)}</div></button>`).join('');
+    renderPlan();
+    $('#dkNear').innerHTML = DOKHINAYON.nearby.map(n => `<li><span>${n.n}<small>${n.k}</small></span><span class="display" style="font-size:24px">${n.d}</span></li>`).join('');
+    $('#dkMs').innerHTML = DOKHINAYON.milestones.map(m => `<li class="${m.c}"><b>${m.n}</b><span class="small">${m.s}</span></li>`).join('');
+    $('#dkStrip').innerHTML = DOKHINAYON.months.map(m => `<figure><div class="im"><div class="fb"><span>Site photo</span></div></div><figcaption>${m}</figcaption></figure>`).join('');
+    $('#dkPay').innerHTML = DOKHINAYON.payment.map((s, i) => `<li class="${i === 0 ? 'now' : ''}"><b>${s}</b><span class="small">Amount: TBC</span></li>`).join('');
+    $('#dkSim').innerHTML = DOKHINAYON.similar.map(s => card(by[s], { ratio: '4/3' })).join('');
+
+    // landowners JV
+    renderJV(0);
+    hydrate(document);
+  }
+
+  function setBiz(slug) {
+    const p = by[slug];
+    $('#bizImg').innerHTML = img('p:' + slug, p.name, 900, 1125);
+    $$('[data-biz]').forEach(b => b.classList.toggle('on', b.dataset.biz === slug));
+  }
+
+  /* ---------- home status tabs ---------- */
+  let homeTab = 'ongoing';
+  function renderHomeTabs() {
+    $('#homeTabs').innerHTML = ['ongoing', 'upcoming', 'completed'].map(s => `<button type="button" class="chip" role="tab" id="ht-${s}" aria-selected="${s === homeTab}" tabindex="${s === homeTab ? 0 : -1}" data-htab="${s}">${statusLabel[s]} <small>${PROJECTS.filter(p => p.status === s).length}</small></button>`).join('');
+    $('#homeCards').setAttribute('aria-labelledby', 'ht-' + homeTab);
+    $('#homeCards').innerHTML = PROJECTS.filter(p => p.status === homeTab).slice(0, 8).map(p => card(p)).join('');
+    motionScan($('#homeCards'));
+  }
+  function tabKeys(list, attr, onPick) {
+    list.addEventListener('keydown', e => {
+      if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(e.key)) return;
+      const tabs = $$('[role=tab]', list), i = tabs.indexOf(document.activeElement); if (i < 0) return;
+      e.preventDefault();
+      const n = e.key === 'Home' ? 0 : e.key === 'End' ? tabs.length - 1 : (i + (e.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+      onPick(tabs[n].dataset[attr]); $$('[role=tab]', list)[n].focus();
+    });
+  }
+
+  /* ---------- SVG map ---------- */
+  const MW = 560, MH = 840, LA0 = 23.890, LA1 = 23.705, LN0 = 90.350, LN1 = 90.452;
+  const mx = lng => (lng - LN0) / (LN1 - LN0) * MW, my = lat => (LA0 - lat) / (LA0 - LA1) * MH;
+  const LBL = { 'Banani': [0, -12, 'middle'], 'Banani DOHS': [-9, 4, 'end'], 'Gulshan 2': [8, -8, 'start'], 'Gulshan': [0, 22, 'middle'], 'Mohakhali': [-9, 14, 'end'], 'Mohakhali DOHS': [-9, 4, 'end'], 'Lalmatia': [-9, 4, 'end'], 'Bashundhara R/A': [-9, 4, 'end'] };
+  function smooth(pts, closed) {
+    const P = pts.map(([la, ln]) => [mx(ln), my(la)]); const n = P.length; let d = `M${P[0][0].toFixed(1)},${P[0][1].toFixed(1)}`;
+    const g = i => P[closed ? (i + n) % n : Math.max(0, Math.min(n - 1, i))];
+    for (let i = 0; i < (closed ? n : n - 1); i++) {
+      const p0 = g(i - 1), p1 = g(i), p2 = g(i + 1), p3 = g(i + 2);
+      d += ` C${(p1[0] + (p2[0] - p0[0]) / 6).toFixed(1)},${(p1[1] + (p2[1] - p0[1]) / 6).toFixed(1)} ${(p2[0] - (p3[0] - p1[0]) / 6).toFixed(1)},${(p2[1] - (p3[1] - p1[1]) / 6).toFixed(1)} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`;
+    }
+    return d + (closed ? 'Z' : '');
+  }
+  const LAND = [[23.893, 90.362], [23.894, 90.405], [23.886, 90.438], [23.862, 90.449], [23.83, 90.451], [23.8, 90.449], [23.77, 90.446], [23.745, 90.44], [23.72, 90.43], [23.707, 90.41], [23.709, 90.384], [23.72, 90.364], [23.74, 90.354], [23.77, 90.353], [23.8, 90.356], [23.83, 90.356], [23.862, 90.357]];
+  const RIVERS = [
+    [[23.896, 90.356], [23.86, 90.351], [23.82, 90.350], [23.79, 90.351], [23.76, 90.350], [23.735, 90.352]],
+    [[23.735, 90.352], [23.716, 90.362], [23.704, 90.384], [23.701, 90.41], [23.705, 90.445]],
+    [[23.896, 90.452], [23.85, 90.455], [23.80, 90.454], [23.76, 90.452]]
+  ];
+  const LAKES = [[[23.806, 90.409], [23.796, 90.411], [23.786, 90.409], [23.776, 90.411], [23.767, 90.405], [23.759, 90.396]], [[23.756, 90.371], [23.746, 90.376], [23.738, 90.378]]];
+  const ROADS = [
+    [[23.888, 90.405], [23.85, 90.403], [23.815, 90.401], [23.79, 90.401], [23.77, 90.398], [23.75, 90.396], [23.727, 90.41]],
+    [[23.825, 90.364], [23.795, 90.371], [23.762, 90.374], [23.742, 90.381], [23.724, 90.392]],
+    [[23.832, 90.424], [23.80, 90.425], [23.778, 90.428], [23.75, 90.426]],
+    [[23.774, 90.415], [23.80, 90.414]],
+    [[23.765, 90.388], [23.771, 90.405], [23.779, 90.416]],
+    [[23.812, 90.368], [23.81, 90.385], [23.812, 90.401]]
+  ];
+  const pinPos = (() => { // spread pins around their area dot
+    const seen = {}, out = {};
+    PROJECTS.forEach((p, i) => {
+      const key = p.area || 'TBC', a = p.area ? AREAS[p.area] : TBC_ANCHOR, k = seen[key] = (seen[key] || 0) + 1;
+      const ang = k * 2.39996 + key.length, r = 13 + 6.5 * Math.sqrt(k - 1);
+      out[p.slug] = [mx(a[1]) + Math.cos(ang) * r, my(a[0]) + Math.sin(ang) * r];
+    });
+    return out;
+  })();
+  const MAPS = {};
+  function makeMap(root) {
+    const kind = root.dataset.map, list = kind !== 'contact', chips = kind === 'home';
+    const st = { chip: 'all', hlArea: null, open: null };
+    const areaNames = Object.keys(AREAS);
+    const svg = `<svg viewBox="0 0 ${MW} ${MH}" role="group" aria-label="Map of Dhaka with Rangs projects">
+      <path class="land" d="${smooth(LAND, true)}"/>
+      ${RIVERS.map(r => `<path class="river" d="${smooth(r)}"/>`).join('')}
+      ${LAKES.map(r => `<path class="river" style="stroke-width:3" d="${smooth(r)}"/>`).join('')}
+      ${ROADS.map(r => `<path class="road" d="${smooth(r)}"/>`).join('')}
+      <g class="areas">${areaNames.map(a => { const x = mx(AREAS[a][1]), y = my(AREAS[a][0]), l = LBL[a] || [9, 4, 'start']; return `<g class="area" data-area="${a}"><circle class="adot" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3"/></g>`; }).join('')}</g>
+      <g class="pins">${PROJECTS.map(p => { const [x, y] = pinPos[p.slug]; return `<g class="pin" tabindex="0" role="button" data-slug="${p.slug}" data-area="${p.area || 'Area TBC'}" aria-label="${esc(p.name)}, ${esc(p.areaLabel)}, ${statusLabel[p.status]}"><circle class="c-${p.status}" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/></g>`; }).join('')}</g>
+      <g class="labels">${areaNames.map(a => { const x = mx(AREAS[a][1]), y = my(AREAS[a][0]), l = LBL[a] || [9, 4, 'start']; return `<g class="area" data-area="${a}"><text class="alab" x="${(x + l[0]).toFixed(1)}" y="${(y + l[1]).toFixed(1)}" text-anchor="${l[2]}" stroke="#F7F3EE" stroke-width="3" paint-order="stroke">${a}</text></g>`; }).join('')}</g>
+    </svg>`;
+    const legend = `<div class="mlegend"><span><i style="background:var(--accent)"></i>Ongoing</span><span><i style="background:var(--night)"></i>Completed</span><span><i style="background:#fff;border:2px solid var(--night)"></i>Upcoming</span><span>Pins show area, not exact plot</span></div>`;
+    const chipHTML = chips ? `<div class="tabs" role="group" aria-label="Filter map" style="margin-bottom:20px">${[['all', 'All'], ['completed', 'Completed'], ['ongoing', 'Ongoing'], ['upcoming', 'Upcoming'], ['Residential', 'Residential'], ['Commercial', 'Commercial']].map(([v, l]) => `<button type="button" class="chip" data-mchip="${v}" aria-pressed="${v === 'all'}">${l}</button>`).join('')}</div>` : '';
+    const areaList = list ? `<div><p class="label" style="margin-bottom:12px">18 areas</p><ul class="alist">${areaNames.concat(['Area TBC']).map(a => `<li><button type="button" data-al="${a}"><span>${a}</span><small data-ac="${a}"></small></button></li>`).join('')}</ul></div>` : '';
+    root.innerHTML = `${chipHTML}<div class="${list ? 'mapgrid' : ''}"><div><div class="map">${svg}<div class="mcard" hidden></div></div>${legend}</div>${areaList}</div>`;
+    const map = $('.map', root), mcard = $('.mcard', root);
+    const M = MAPS[kind] = { root, st, update, open, close };
+    function match(p) {
+      if (kind === 'projects') return projMatch(p);
+      const c = st.chip; return c === 'all' || p.status === c || p.type === c;
+    }
+    function update() {
+      const counts = {};
+      $$('.pin', root).forEach(g => { const p = by[g.dataset.slug], ok = match(p); g.classList.toggle('off', !ok); g.classList.toggle('dim', ok && !!st.hlArea && g.dataset.area !== st.hlArea); g.setAttribute('tabindex', ok ? 0 : -1); if (ok) counts[g.dataset.area] = (counts[g.dataset.area] || 0) + 1; });
+      $$('[data-ac]', root).forEach(s => { const n = counts[s.dataset.ac] || 0; s.textContent = n ? n + (n === 1 ? ' project' : ' projects') : '—'; });
+      $$('.area', root).forEach(g => g.classList.toggle('hl', g.dataset.area === st.hlArea));
+      $$('[data-al]', root).forEach(b => b.classList.toggle('on', b.dataset.al === st.hlArea));
+      if (st.open && !match(by[st.open])) close();
+    }
+    function open(slug) {
+      const p = by[slug]; st.open = slug;
+      const [x, y] = pinPos[slug], r = map.getBoundingClientRect(), px = x / MW * r.width, py = y / MH * r.height;
+      const left = Math.max(115, Math.min(r.width - 115, px));
+      mcard.style.left = left + 'px'; mcard.style.top = py + 'px';
+      mcard.style.transform = py < 260 ? 'translate(-50%, 18px)' : '';
+      mcard.innerHTML = `<button type="button" class="x" data-mclose aria-label="Close"><svg width="14" height="14"><use href="#i-x"/></svg></button>
+        ${im('p:' + slug, p.name, 520, 292)}
+        <div class="bd"><span class="st st-${p.status}" style="align-self:flex-start">${statusLabel[p.status]}${p.sold ? ' · Sold out' : ''}</span><strong class="display" style="font-size:28px;line-height:1">${esc(p.name)}</strong><span class="small">${esc(p.areaLabel)} · ${p.type}${p.year ? ' · ' + p.year : ''}</span>
+        ${p.page ? `<a class="lnk" href="${p.page}" style="align-self:flex-start">View project ${ARW}</a>` : `<button type="button" class="lnk" style="align-self:flex-start" data-enq="${p.status === 'upcoming' ? 'launch' : 'info'}" data-project="${esc(p.name)}">${p.status === 'upcoming' ? 'Register interest' : 'Enquire'} ${ARW}</button>`}</div>`;
+      mcard.hidden = false;
+      $$('.pin', root).forEach(g => g.classList.toggle('hl', g.dataset.slug === slug));
+    }
+    function close() { st.open = null; mcard.hidden = true; $$('.pin', root).forEach(g => g.classList.remove('hl')); }
+    root.addEventListener('click', e => {
+      const pin = e.target.closest('.pin'); if (pin) { open(pin.dataset.slug); return; }
+      if (e.target.closest('[data-mclose]')) { close(); return; }
+      const ch = e.target.closest('[data-mchip]'); if (ch) { st.chip = ch.dataset.mchip; $$('[data-mchip]', root).forEach(b => b.setAttribute('aria-pressed', b === ch)); update(); return; }
+      const al = e.target.closest('[data-al]');
+      if (al) {
+        if (kind === 'projects') { PF.area = PF.area === al.dataset.al ? 'all' : al.dataset.al; syncFilterUI(); renderProjects(); }
+        else { setPF({ area: al.dataset.al }); location.hash = '#/projects'; }
+      }
+    });
+    root.addEventListener('keydown', e => { const pin = e.target.closest('.pin'); if (pin && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); open(pin.dataset.slug); } if (e.key === 'Escape') close(); });
+    root.addEventListener('pointerover', e => { const al = e.target.closest('[data-al]'); if (al) { st.hlArea = al.dataset.al; update(); } });
+    root.addEventListener('focusin', e => { const al = e.target.closest('[data-al]'); if (al) { st.hlArea = al.dataset.al; update(); } });
+    root.addEventListener('pointerout', e => { if (e.target.closest('[data-al]') && !e.relatedTarget?.closest?.('[data-al]')) { st.hlArea = null; update(); } });
+    update();
+    return M;
+  }
+
+  /* ---------- projects page filters ---------- */
+  const PF = { status: 'all', type: 'all', area: 'all', size: 'all', sold: true, sort: 'new', view: 'grid' };
+  function setPF(o) { Object.assign(PF, { status: 'all', type: 'all', area: 'all', size: 'all', sold: true }, o); syncFilterUI(); }
+  function sizeOk(p) { if (PF.size === 'all') return true; if (!p.size) return false; return PF.size === 's' ? p.size <= 1500 : PF.size === 'm' ? p.size > 1500 && p.size <= 2500 : p.size > 2500; }
+  function projMatch(p) {
+    return (PF.status === 'all' || p.status === PF.status) && (PF.type === 'all' || p.type === PF.type)
+      && (PF.area === 'all' || (p.area || 'Area TBC') === PF.area) && (PF.sold || !p.sold) && sizeOk(p);
+  }
+  function syncFilterUI() {
+    $('#fStatus').value = PF.status; $('#fType').value = PF.type; $('#fArea').value = PF.area; $('#fSize').value = PF.size; $('#fSold').checked = PF.sold; $('#fSort').value = PF.sort;
+    $$('[data-view]').forEach(b => b.setAttribute('aria-pressed', b.dataset.view === PF.view));
+  }
+  function renderProjects() {
+    const rank = p => p.status === 'upcoming' ? 3000 : p.status === 'ongoing' ? 2900 : (p.year || 1990);
+    const list = PROJECTS.filter(projMatch).sort((a, b) => PF.sort === 'az' ? a.name.localeCompare(b.name) : rank(b) - rank(a));
+    $('#pjCount').textContent = list.length; $('#pjWord').textContent = list.length === 1 ? 'project' : 'projects';
+    const empty = list.length === 0;
+    $('#pjEmpty').hidden = !empty;
+    $('#pjGrid').hidden = empty || PF.view !== 'grid';
+    $('#pjMap').hidden = empty || PF.view !== 'map';
+    $('#sizeNote').hidden = PF.size === 'all';
+    if (PF.view === 'grid') { $('#pjGrid').innerHTML = list.map(p => card(p)).join(''); motionScan($('#pjGrid')); }
+    if (MAPS.projects) MAPS.projects.update();
+    if (window.ScrollTrigger) ScrollTrigger.refresh();
+  }
+
+  /* ---------- Dokhinayon: stacking plan, tabs ---------- */
+  let selUnit = null;
+  function renderPlan() {
+    let h = `<span class="fl">9</span><div class="amen">Rooftop Garden · Fitness Centre</div>`;
+    for (let f = 8; f >= 1; f--) {
+      h += `<span class="fl">Floor ${f}</span>` + DOKHINAYON.units[f].map((s, i) => { const id = f + (i ? 'B' : 'A'); return `<button type="button" class="u-${s}" data-unit="${id}" data-st="${s}" aria-pressed="${selUnit === id}" aria-label="Unit ${id}, ${s}"><span>${id}</span><span>${s}</span></button>`; }).join('');
+    }
+    h += `<span class="fl">G</span><div class="amen">Lobby Lounge · Sunken Court · Parking</div>`;
+    $('#splan').innerHTML = h;
+    const u = selUnit && $(`[data-unit="${selUnit}"]`);
+    $('#udetail').innerHTML = u ? `<div><p class="label">Unit ${selUnit} · ${u.dataset.st}</p><p class="h3" style="margin-top:6px">approx. 2,030 sq ft</p><p class="small">Bedrooms and facing: TBC · Price on request</p></div>
+      <button type="button" class="btn btn-o" data-enq="info" data-project="Dokhinayon" data-unitmsg="${selUnit}">Enquire about this unit</button>`
+      : `<p class="small" style="margin:0">Select a unit to see its size and enquire.</p>`;
+  }
+  function renderJV(n) {
+    const S = [['Submit land', 'Share the location, size and road width of your plot.'], ['Site visit', 'Our land and engineering team visits the plot with you.'], ['Proposal', 'You receive a written proposal with the plan and sharing terms.'], ['Agreement', 'We sign the joint-venture agreement once the terms are clear.'], ['Build & handover', 'We build, keep you updated and hand over your share.']];
+    $('#jv').dataset.n = n;
+    $('#jv').innerHTML = S.map(([h, t], i) => `<li class="${i < n ? 'done' : i === n ? 'on now' : ''}"><button type="button" data-jvs="${i}" style="all:unset;cursor:pointer;display:block" aria-current="${i === n ? 'step' : 'false'}"><b>0${i + 1} ${h}</b></button><span class="small" style="${i === n ? '' : 'opacity:.55'}">${t}</span></li>`).join('');
+  }
+
+  /* ---------- drawer ---------- */
+  const DR = {
+    info: ['Enquire', "Let's talk.", 'info'], visit: ['Book a site visit', 'See it for yourself.', 'visit'], launch: ['Register interest', 'Be first to know.', 'launch'],
+    nrb: ['Buying from abroad', 'Talk to an NRB advisor.', 'nrb'], land: ['Landowners', 'Tell us about your land.', 'land'], brochure: ['Download brochure', 'Get the brochure.', 'info']
+  };
+  let lastFocus = null;
+  function openDrawer(mode, project, unit) {
+    const d = $('#drawer'), m = DR[mode] || DR.info;
+    lastFocus = document.activeElement;
+    $('#drForm').hidden = false; $('#drThanks').hidden = true; $('#drForm').reset(); $('#drForm [data-nrbf]').hidden = true;
+    $('#drKicker').textContent = m[0]; $('#drH').textContent = m[1]; $('#drPurpose').value = m[2];
+    $('#drVisit').hidden = mode !== 'visit';
+    d.dataset.mode = mode;
+    if (project) { const sel = $('#drForm [data-projsel]'); const o = [...sel.options].find(o => o.text.startsWith(project)); if (o) sel.value = o.value; }
+    if (unit) $('#drForm [name=msg]').value = `I'm interested in Unit ${unit} at Dokhinayon.`;
+    if (mode === 'nrb') { $('#drForm [data-nrb]').checked = true; $('#drForm [data-nrbf]').hidden = false; }
+    d.showModal ? d.showModal() : d.setAttribute('open', '');
+    stopScroll(true);
+  }
+  function stopScroll(on) { if (lenis) on ? lenis.stop() : lenis.start(); }
+
+  /* ---------- lightbox ---------- */
+  let lbI = 0;
+  function openLb(i) {
+    const n = IMAGES.dokhinayon.length; lbI = (i + n) % n;
+    $('#lbStage').innerHTML = `<div class="im">${img('dk:' + lbI, 'Dokhinayon · ' + IMAGES.dokhinayonCaptions[lbI], 1600, 1000, { eager: true })}</div>`;
+    $('#lbPos').textContent = `${lbI + 1} / ${n} · ${IMAGES.dokhinayonCaptions[lbI]}`;
+    const d = $('#lb'); if (!d.open) { lastFocus = document.activeElement; d.showModal ? d.showModal() : d.setAttribute('open', ''); stopScroll(true); }
+  }
+  let swX = null;
+  $('#lb').addEventListener('pointerdown', e => { swX = e.clientX; });
+  $('#lb').addEventListener('pointerup', e => { if (swX !== null && Math.abs(e.clientX - swX) > 50) openLb(lbI + (e.clientX < swX ? 1 : -1)); swX = null; });
+  $('#lb').addEventListener('keydown', e => { if (e.key === 'ArrowRight') openLb(lbI + 1); if (e.key === 'ArrowLeft') openLb(lbI - 1); });
+  $$('dialog').forEach(d => d.addEventListener('close', () => { stopScroll(false); if (lastFocus) lastFocus.focus({ preventScroll: true }); }));
+  $$('dialog').forEach(d => d.addEventListener('click', e => { if (e.target === d && d.id === 'drawer') d.close(); }));
+
+  /* ---------- forms ---------- */
+  function validate(f) {
+    const bad = [...f.querySelectorAll('[required]')].find(i => !String(i.value).trim());
+    if (bad) { bad.focus(); toast('Please fill in ' + ((bad.closest('label') && bad.closest('label').firstChild.textContent.trim()) || 'this field').toLowerCase() + '.'); return false; }
+    return true;
+  }
+  document.addEventListener('submit', e => {
+    const f = e.target; e.preventDefault();
+    if (f.id === 'finder') { const d = new FormData(f); setPF({ status: d.get('status'), type: d.get('type'), area: d.get('area'), size: d.get('size') }); location.hash = '#/projects'; return; }
+    if (!validate(f)) return;
+    if (f.id === 'drForm') { f.hidden = true; $('#drThanks').hidden = false; if ($('#drawer').dataset.mode === 'brochure') $('#drThanks').innerHTML = '<b>Thank you.</b>The Dokhinayon brochure (PDF TBC) will be sent to your phone on WhatsApp.'; return; }
+    const msg = { landForm: 'We have your land details. Our team will call you to plan a site visit.', nlForm: "You're on the list." }[f.id] || 'A Rangs advisor will call you within one working day.';
+    f.innerHTML = `<div class="thanks"><b>Thank you.</b>${msg}</div>`;
+  });
+  document.addEventListener('change', e => {
+    const n = e.target.closest('[data-nrb]'); if (n) { const box = n.closest('form').querySelector('[data-nrbf]'); if (box) box.hidden = !n.checked; }
+    if (e.target.id === 'drPurpose') $('#drVisit').hidden = e.target.value !== 'visit';
+    const id = e.target.id;
+    if (['fStatus', 'fType', 'fArea', 'fSize', 'fSort'].includes(id)) { PF[{ fStatus: 'status', fType: 'type', fArea: 'area', fSize: 'size', fSort: 'sort' }[id]] = e.target.value; renderProjects(); }
+    if (id === 'fSold') { PF.sold = e.target.checked; renderProjects(); }
+  });
+
+  /* ---------- clicks ---------- */
+  document.addEventListener('click', e => {
+    const t = e.target;
+    const wa = t.closest('[data-wa]'); if (wa) { e.preventDefault(); if (CONTACT.whatsapp) window.open('https://wa.me/' + CONTACT.whatsapp, '_blank', 'noopener'); else toast('WhatsApp number to be added (TBC). Call 16677 meanwhile.'); return; }
+    const tbc = t.closest('[data-tbc]'); if (tbc) { e.preventDefault(); toast(tbc.dataset.tbc + ': TBC.'); return; }
+    if (t.closest('[data-bn]')) { toast('Bangla version coming soon.'); return; }
+    const fl = t.closest('[data-filter]'); if (fl) { setPF(JSON.parse(fl.dataset.filter)); closeMenus(); if (S.route === 'projects') { e.preventDefault(); renderProjects(); scrollTo0(); } return; }
+    const ml = t.closest('[data-map-link]'); if (ml) { PF.view = 'map'; syncFilterUI(); if (S.route === 'projects') { e.preventDefault(); renderProjects(); } return; }
+    const lf = t.closest('[data-launch]'); if (lf) { e.preventDefault(); closeMenus(); openDrawer('launch', by[lf.dataset.launch].name); return; }
+    const en = t.closest('[data-enq]'); if (en) { closeMenus(); openDrawer(en.dataset.enq || 'info', en.dataset.project, en.dataset.unitmsg); return; }
+    if (t.closest('[data-brochure]')) { openDrawer('brochure', 'Dokhinayon'); return; }
+    const cl = t.closest('[data-close]'); if (cl) { cl.closest('dialog').close(); return; }
+    const q = t.closest('[data-quick]'); if (q) { const v = q.dataset.quick; setPF(v === 'Commercial' ? { type: v } : { status: v }); location.hash = '#/projects'; return; }
+    const ht = t.closest('[data-htab]'); if (ht) { homeTab = ht.dataset.htab; renderHomeTabs(); $('#ht-' + homeTab).focus(); return; }
+    const vw = t.closest('[data-view]'); if (vw) { PF.view = vw.dataset.view; syncFilterUI(); renderProjects(); return; }
+    if (t.closest('[data-clear]')) { setPF({}); renderProjects(); return; }
+    const bz = t.closest('[data-biz]'); if (bz) { setBiz(bz.dataset.biz); return; }
+    const g = t.closest('[data-gal]'); if (g) { openLb(+g.dataset.gal); return; }
+    const lb = t.closest('[data-lb]'); if (lb) { openLb(lbI + +lb.dataset.lb); return; }
+    const un = t.closest('[data-unit]'); if (un) { selUnit = un.dataset.unit; renderPlan(); $(`[data-unit="${selUnit}"]`).focus(); return; }
+    const pt = t.closest('[data-plan]'); if (pt) { setPlan(pt.dataset.plan); return; }
+    const jv = t.closest('[data-jv]'); if (jv) { renderJV(Math.max(0, Math.min(4, +$('#jv').dataset.n + +jv.dataset.jv))); return; }
+    const js = t.closest('[data-jvs]'); if (js) { renderJV(+js.dataset.jvs); return; }
+    const go = t.closest('[data-goto]'); if (go) { scrollToEl($('#' + go.dataset.goto)); return; }
+    const sec = t.closest('#ptabs a'); if (sec) { e.preventDefault(); scrollToEl($('#' + sec.dataset.sec)); return; }
+    const mn = t.closest('[data-menu]'); if (mn) { toggleMobileMenu(); return; }
+    if (t.closest('#mmBtn')) { toggleMega(undefined, true); return; }
+    if (t.closest('[data-skip]')) { e.preventDefault(); const h = $('.route.active h1'); if (h) { h.setAttribute('tabindex', '-1'); h.focus(); } return; }
+    if (t.closest('#mmenu a') || t.closest('#mega a')) closeMenus();
+  });
+  function setPlan(u) {
+    $$('#planTabs [role=tab]').forEach(b => { const on = b.dataset.plan === u; b.setAttribute('aria-selected', on); b.tabIndex = on ? 0 : -1; });
+    $('#planP').setAttribute('aria-labelledby', 'tab' + u); $('#planLbl').textContent = `Floor plan · Unit ${u} · placeholder`;
+  }
+
+  /* ---------- header: mega menu, mobile menu, solid/hide ---------- */
+  const hdr = $('#hdr');
+  let megaT;
+  let megaAt = 0;
+  function toggleMega(force, fromClick) {
+    if (fromClick && !$('#mega').hidden && Date.now() - megaAt < 450) return;
+    const open = force ?? $('#mega').hidden;
+    if (open && $('#mega').hidden) megaAt = Date.now();
+    $('#mega').hidden = !open; $('#mmBtn').setAttribute('aria-expanded', open); hdrState();
+  }
+  $('#mm').addEventListener('mouseenter', () => { if (matchMedia('(hover:hover)').matches) { clearTimeout(megaT); toggleMega(true); } });
+  $('#mm').addEventListener('mouseleave', () => { megaT = setTimeout(() => toggleMega(false), 220); });
+  function toggleMobileMenu(force) {
+    const m = $('#mmenu'), open = force ?? m.hidden;
+    m.hidden = !open; $('[data-menu]').setAttribute('aria-expanded', open); $('[data-menu]').setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    stopScroll(open); hdrState();
+  }
+  function closeMenus() { if (!$('#mega').hidden) toggleMega(false); if (!$('#mmenu').hidden) toggleMobileMenu(false); }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') { if (!$('#mega').hidden) { toggleMega(false); $('#mmBtn').focus(); } if (!$('#mmenu').hidden) toggleMobileMenu(false); } });
+  let lastY = 0, hidden = false;
+  function hdrState() {
+    const y = window.scrollY, menuOpen = !$('#mega').hidden || !$('#mmenu').hidden;
+    hdr.classList.toggle('solid', y > 60 || menuOpen);
+    if (!menuOpen && y > 400 && y > lastY + 4) hidden = true; else if (y < lastY - 4 || y < 400 || menuOpen) hidden = false;
+    hdr.classList.toggle('hide', hidden);
+    document.body.classList.toggle('hdr-shown', !hidden && y > 60);
+    lastY = y;
+  }
+  addEventListener('scroll', hdrState, { passive: true });
+
+  /* ---------- hero film ---------- */
+  const video = $('#heroVideo'), hero = $('#hero');
+  let slideI = 0, slideT = null;
+  function slidesOn() {
+    if (slideT) return;
+    const box = $('#slides');
+    if (box.children.length < 2) box.insertAdjacentHTML('beforeend', IMAGES.heroSlides.slice(1).map(s => `<img src="${esc(url(s))}" alt="" width="1920" height="1080" decoding="async" onerror="this.remove()">`).join(''));
+    if (reduced) return;
+    slideT = setInterval(() => { const imgs = $$('img', box); if (imgs.length < 2) return; imgs[slideI % imgs.length].classList.remove('on'); slideI++; imgs[slideI % imgs.length].classList.add('on'); }, 6000);
+  }
+  function slidesOff() { clearInterval(slideT); slideT = null; }
+  video.addEventListener('playing', () => { hero.classList.add('vid'); slidesOff(); });
+  video.addEventListener('error', () => { hero.classList.remove('vid'); slidesOn(); }, true);
+  let heroVisible = true;
+  function tryVideo() {
+    if (reduced) { slidesOn(); return; }
+    if (!video.src) { video.src = url(IMAGES.heroVideo); video.addEventListener('error', () => slidesOn(), { once: true }); }
+    if (heroVisible && S.route === 'home') video.play().catch(() => slidesOn());
+    setTimeout(() => { if (!hero.classList.contains('vid')) slidesOn(); }, 5000);
+  }
+  new IntersectionObserver(es => es.forEach(en => { heroVisible = en.isIntersecting; if (!video.src) return; heroVisible && S.route === 'home' ? video.play().catch(() => {}) : video.pause(); }), { threshold: 0.05 }).observe(hero);
+  $('#vMute').addEventListener('click', () => {
+    if (!hero.classList.contains('vid')) { toast('Film not available — showing photos.'); return; }
+    video.muted = !video.muted; $('#vMute').textContent = video.muted ? 'Sound off' : 'Sound on'; $('#vMute').setAttribute('aria-pressed', !video.muted);
+  });
+  $('#vReplay').addEventListener('click', () => { if (hero.classList.contains('vid')) { video.currentTime = 0; video.play().catch(() => {}); } else { slidesOff(); slideI = 0; $$('#slides img').forEach((im, i) => im.classList.toggle('on', i === 0)); slidesOn(); } });
+
+  /* ---------- scrolling ---------- */
+  let lenis = null;
+  function scrollTo0() { if (lenis) lenis.scrollTo(0, { immediate: true, force: true }); window.scrollTo(0, 0); }
+  function scrollToEl(el) {
+    if (!el) return;
+    const off = (S.route === 'project' ? 140 : 100);
+    const y = el.getBoundingClientRect().top + window.scrollY - off;
+    if (lenis) { lenis.resize && lenis.resize(); lenis.scrollTo(y, { duration: 1.6, force: true }); } else window.scrollTo({ top: y, behavior: reduced ? 'auto' : 'smooth' });
+  }
+
+  /* ---------- router ---------- */
+  const S = { route: 'home' };
+  const TITLES = {
+    home: 'Rangs Properties — Creating Lifestyles since 1996', projects: 'Projects — Rangs Properties',
+    project: 'Dokhinayon, Bashundhara R/A — Rangs Properties', about: 'About — Rangs Properties',
+    landowners: 'Landowners: Build with Rangs — Rangs Properties', contact: 'Contact — Rangs Properties'
+  };
+  function parse() {
+    const p = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
+    if (!p.length) return { name: 'home' };
+    if (p[0] === 'projects') return { name: 'projects' };
+    if (p[0] === 'project') return { name: p[1] === 'dokhinayon' ? 'project' : 'projects' };
+    if (['about', 'landowners', 'contact'].includes(p[0])) return { name: p[0], sec: p[1] };
+    return { name: 'home' };
+  }
+  function route() {
+    const r = parse(), el = $(`.route[data-route="${r.name}"]`);
+    closeMenus(); $$('dialog[open]').forEach(d => d.close());
+    $$('.route').forEach(m => m.classList.toggle('active', m === el));
+    S.route = r.name; document.title = TITLES[r.name];
+    document.body.classList.toggle('on-project', r.name === 'project');
+    $$('[data-nav]').forEach(a => a.removeAttribute('aria-current'));
+    const nk = r.sec === 'stories' ? 'stories' : r.name; const na = $(`[data-nav="${nk}"]`); if (na) na.setAttribute('aria-current', 'page');
+    $('#mmBtn').toggleAttribute('data-cur', r.name === 'projects' || r.name === 'project');
+    $$('[data-mb]').forEach(a => a.removeAttribute('aria-current'));
+    const mb = r.name === 'home' ? 'home' : r.name === 'projects' ? (PF.view === 'map' ? 'map' : 'projects') : ''; if (mb) $(`[data-mb="${mb}"]`).setAttribute('aria-current', 'page');
+    if (r.name === 'projects') { syncFilterUI(); renderProjects(); }
+    if (r.name === 'home') { if (heroVisible) video.src && video.play().catch(() => {}); } else video.pause();
+    scrollTo0(); lastY = 0; hidden = false; hdrState();
+    const h = $('h1', el); if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
+    initMotion(el);
+    if (r.sec) setTimeout(() => scrollToEl(document.getElementById(r.sec)), 350);
+    if (r.name === 'contact' && MAPS.contact) requestAnimationFrame(() => MAPS.contact.open('rangs-babylonia'));
+  }
+  addEventListener('hashchange', route);
+
+  /* ---------- project detail: active section tab ---------- */
+  const secIO = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) $$('#ptabs a').forEach(a => a.classList.toggle('on', a.dataset.sec === en.target.id)); }), { rootMargin: '-45% 0px -50% 0px' });
+  $$('.pd section[id]').forEach(s => secIO.observe(s));
+  // R-A-N-G-S active letter
+  const rgIO = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) $$('#rgL span').forEach(s => s.classList.toggle('on', s.dataset.l === en.target.dataset.rg)); }), { rootMargin: '-45% 0px -45% 0px' });
+  // timeline drag-to-scroll
+  (function () {
+    const tl = $('#tlStrip'); let down = false, sx = 0, sl = 0, moved = false;
+    tl.addEventListener('pointerdown', e => { if (e.pointerType !== 'mouse') return; down = true; moved = false; sx = e.clientX; sl = tl.scrollLeft; tl.classList.add('drag'); });
+    addEventListener('pointermove', e => { if (!down) return; const dx = e.clientX - sx; if (Math.abs(dx) > 3) moved = true; tl.scrollLeft = sl - dx; });
+    addEventListener('pointerup', () => { down = false; tl.classList.remove('drag'); });
+    tl.addEventListener('click', e => { if (moved) { e.preventDefault(); e.stopPropagation(); } }, true);
+  })();
+
+  /* ---------- motion (GSAP + ScrollTrigger + Lenis) ---------- */
+  let ctx = null, motionReady = false;
+  function motionScan(root) {
+    if (!root) return;
+    if (!motionReady) return;
+    $$('.rv:not([data-m])', root).forEach(el => {
+      el.dataset.m = 1; const i = el.querySelector('img');
+      gsap.fromTo(el, { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.4, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 92%', once: true }, onComplete: () => gsap.set(el, { clearProps: 'clipPath' }) });
+      if (i && !el.hasAttribute('data-parallax')) gsap.fromTo(i, { scale: 1.18 }, { scale: 1, duration: 1.8, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 92%', once: true }, onComplete: () => gsap.set(i, { clearProps: 'transform' }) });
+    });
+  }
+  function initMotion(routeEl) {
+    // lines for every [data-lines] heading in the route (hero ones animate with CSS)
+    $$('[data-lines]', routeEl).forEach(lines);
+    $$('[data-words]', routeEl).forEach(words);
+    $$('#rgP [data-rg]').forEach(p => rgIO.observe(p));
+    if (!motionReady) return;
+    if (ctx) ctx.revert();
+    $$('[data-m]').forEach(el => el.removeAttribute('data-m'));
+    ctx = gsap.context(() => {
+      $$('[data-lines]', routeEl).forEach(h => {
+        if (h.closest('.hero,.page-hero')) return;
+        gsap.fromTo($$('.ln-in', h), { yPercent: 105, y: 0 }, { yPercent: 0, y: 0, duration: 1.3, ease: 'expo.out', stagger: 0.09, scrollTrigger: { trigger: h, start: 'top 88%', once: true } });
+      });
+      $$('.fade', routeEl).forEach(el => { if (el.closest('.hero')) return; gsap.fromTo(el, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 1.2, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 90%', once: true } }); });
+      motionScan(routeEl);
+      $$('[data-parallax]', routeEl).forEach(el => { const i = el.querySelector('img'); if (i) gsap.fromTo(i, { yPercent: -6 }, { yPercent: 6, ease: 'none', scrollTrigger: { trigger: el.parentElement, start: 'top bottom', end: 'bottom top', scrub: true } }); });
+      $$('[data-words]', routeEl).forEach(p => gsap.fromTo($$('.w', p), { opacity: 0.14 }, { opacity: 1, stagger: 0.05, ease: 'none', scrollTrigger: { trigger: p, start: 'top 80%', end: 'bottom 45%', scrub: true } }));
+      $$('[data-count]', routeEl).forEach(b => { const n = +b.dataset.count, o = { v: 0 }; gsap.to(o, { v: n, duration: 2, ease: 'power3.out', scrollTrigger: { trigger: b, start: 'top 90%', once: true }, onUpdate: () => { b.textContent = Math.round(o.v); } }); });
+      // landmarks: pinned horizontal scroll on desktop
+      const lm = $('#lm', routeEl), track = $('#lmTrack', routeEl);
+      if (lm && track) {
+        ScrollTrigger.matchMedia({
+          '(min-width: 981px)': () => {
+            lm.classList.remove('free');
+            const dist = () => Math.max(0, track.scrollWidth - document.documentElement.clientWidth);
+            gsap.to(track, { x: () => -dist(), ease: 'none', scrollTrigger: { trigger: lm, start: 'top top', end: () => '+=' + dist(), pin: true, scrub: 1, invalidateOnRefresh: true } });
+          },
+          '(max-width: 980px)': () => { lm.classList.add('free'); $('#lmHint').textContent = 'Swipe sideways'; }
+        });
+      }
+      // stacking cards shrink as the next one arrives
+      const cards = $$('.sc', routeEl);
+      cards.forEach((c, i) => { if (i < cards.length - 1) gsap.to(c, { scale: 0.94 + i * 0.012, ease: 'none', scrollTrigger: { trigger: cards[i + 1], start: 'top bottom', end: 'top 40%', scrub: true } }); });
+    }, routeEl);
+    requestAnimationFrame(() => ScrollTrigger.refresh());
+  }
+  function bootMotion() {
+    if (reduced || !window.gsap || !window.ScrollTrigger) { document.documentElement.classList.remove('anim'); $('#lm').classList.add('free'); $('#lmHint').textContent = 'Swipe or scroll sideways'; return; }
+    gsap.registerPlugin(ScrollTrigger);
+    if (window.Lenis) {
+      lenis = new Lenis({ duration: 1.2, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add(t => lenis.raf(t * 1000)); gsap.ticker.lagSmoothing(0);
+    }
+    motionReady = true;
+    initMotion($('.route.active'));
+  }
+
+  /* ---------- boot ---------- */
+  renderAll(); renderHomeTabs();
+  tabKeys($('#homeTabs'), 'htab', v => { homeTab = v; renderHomeTabs(); });
+  tabKeys($('#planTabs'), 'plan', setPlan);
+  $$('[data-map]').forEach(makeMap);
+  if (reduced) document.documentElement.classList.remove('anim');
+  route();
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bootMotion); else bootMotion();
+  addEventListener('load', tryVideo);
+  addEventListener('resize', () => { if (MAPS.home) MAPS.home.close(); if (MAPS.projects) MAPS.projects.close(); });
+})();
+</script>
+</body>
+</html>
